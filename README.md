@@ -1,0 +1,1 @@
+# browser-extension-check_ratings
