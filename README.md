@@ -1,2 +1,2 @@
-# browser-extension-check_ratings
+# CS 321: Browser Extension
 test
