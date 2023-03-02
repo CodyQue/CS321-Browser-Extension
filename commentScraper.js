@@ -92,8 +92,15 @@ console.log("Begin");
 (async () => {
     const browser = await puppeteer.launch({headless: false, defaultViewport: false, userDataDir: "./tmp"});
     const page = await browser.newPage();
-    await page.goto('https://www.ratemyprofessors.com/professor?tid=2366288');
-    //await page.goto('https://www.ratemyprofessors.com/professor?tid=2310558');
+    //await page.goto('https://www.ratemyprofessors.com/professor?tid=2366288');
+    await page.goto('https://www.ratemyprofessors.com/professor?tid=2637066');
+    try { //Sometimes, the website "Rate My Professor" has a cookies page, so this is used to bypass that
+        await page.click("#close");
+    }
+    catch(error)
+    {
+        console.log("Page does not have cookies page");
+    }
     //await page.screenshot({ path: 'example.png'});
     //const handles = await page.$$("s-main-slot s-result-list s-search-results sg-row");
     const comments = await page.evaluate(() => document.body.innerText);
