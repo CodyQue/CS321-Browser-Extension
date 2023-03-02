@@ -1,4 +1,11 @@
 /**
+ * 
+ * commentScraper.js is used for scraping comments and reviews made 
+ * from Professors through the website "Rate My Professor".
+ * 
+ */
+
+/**
  * Organizes all the comments into a 2D array
  * @param {*} arr 
  */
@@ -64,8 +71,6 @@ function organizeComments(arr)
     //console.log("Founded: " + found);
 }
 
-const puppeteer = require('puppeteer');
-
 const infiniteScrolls = async (page) => {
     console.log("SCROLLING THROUGH PAGE");
     while(true)
@@ -77,6 +82,12 @@ const infiniteScrolls = async (page) => {
     }
 }
 
+/**
+ * 
+ *  This part of the code begins the comment/review scraping
+ * 
+ */
+const puppeteer = require('puppeteer');
 console.log("Begin");
 (async () => {
     const browser = await puppeteer.launch({headless: false, defaultViewport: false, userDataDir: "./tmp"});

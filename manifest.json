@@ -1,0 +1,14 @@
+{
+    "name": "CS 321: Browser Extension",
+    "version": "1.0.0",
+    "description": "Test",
+    "manifest_version": 3,
+    "author": "Cody Q, Aadya K, Anthony B",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "menu.html",
+        "default_title": "Menu"
+    }
+}

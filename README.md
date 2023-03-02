@@ -1,2 +1,3 @@
 # CS 321: Browser Extension
-test
+
+Browser extension to check ratings for professors, generate schedules, and have users create reminders.
