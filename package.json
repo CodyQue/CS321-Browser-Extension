@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/CodyQue/CS321-Browser-Extension#readme",
   "dependencies": {
-    "puppeteer": "^19.7.2"
-  }
+    "mysql": "^2.18.1",
+    "puppeteer": "^19.7.2",
+    "sqlite3": "^5.1.6"
+  },
+  "keywords": []
 }
