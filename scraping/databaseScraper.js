@@ -1,3 +1,7 @@
+/**
+ * Creates and inserts data into the database.
+ */
+
 const fs = require('fs');
 const sqlite3 = require("sqlite3").verbose();
 

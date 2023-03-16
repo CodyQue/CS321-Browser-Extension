@@ -1,3 +1,9 @@
+/**
+ * 
+ * This file can be ignored. This is for viewing the database (queries, attributes, etc)
+ * 
+ */
+
 const sqlite3 = require("sqlite3").verbose();
 
 const db = new sqlite3.Database('./profURL.db', sqlite3.OPEN_READWRITE, (err)=> {
