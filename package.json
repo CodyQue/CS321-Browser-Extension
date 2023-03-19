@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/CodyQue/CS321-Browser-Extension.git"
   },
-  "author": "",
+  "author": "Cody Querubin, Anthony Bazar, Aadya Kamath",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CodyQue/CS321-Browser-Extension/issues"
@@ -18,8 +18,10 @@
   "homepage": "https://github.com/CodyQue/CS321-Browser-Extension#readme",
   "dependencies": {
     "mysql": "^2.18.1",
+    "prompt-sync": "^4.2.0",
     "puppeteer": "^19.7.2",
     "sqlite3": "^5.1.6"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {}
 }

@@ -1,0 +1,139 @@
+[0319/124039.411:INFO:CONSOLE(3)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Embed Load Build: 7.14.0-Z", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0319/124039.411:INFO:CONSOLE(3)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Reading Environment", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0319/124039.412:INFO:CONSOLE(3)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Environment
+ ▪ In Root: true
+ ▪ Master Exists: false
+ ▪ I Am Master: false", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0319/124039.412:INFO:CONSOLE(3)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Taking Control
+ ▪ Master Exists: true
+ ▪ I Am Master: true
+ ▪ Master: NZZ", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0319/124039.412:INFO:CONSOLE(3)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Scanning Root - Persistent Monitoring", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0319/124039.457:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+
+[0319/124039.799:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Loading Player
+ ▪ Document ID: 1
+ ▪ Source: https://embed.sendtonews.com/easy-stn-player/7.14.0-Z/easy-stn-player.js", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124039.990:INFO:CONSOLE(1)] "%c STNVideo Embed [JFJ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Embed Load Build: 7.14.0-Z", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124039.990:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Sending Environment", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124039.990:INFO:CONSOLE(1)] "%c STNVideo Embed [JFJ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Reading Environment", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124039.990:INFO:CONSOLE(1)] "%c STNVideo Embed [JFJ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Environment
+ ▪ In Root: true
+ ▪ Master Exists: true
+ ▪ I Am Master: false", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124039.990:INFO:CONSOLE(1)] "%c STNVideo Embed [JFJ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  I am Not Master
+ ▪ Terminating", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124040.183:INFO:CONSOLE(1)] "Hls.js is not supported in this browser.", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124040.193:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124040.406:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124040.408:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+
+[0319/124040.435:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+
+[0319/124040.560:INFO:CONSOLE(469)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can remove its sandboxing.", source: https://imasdk.googleapis.com/js/sdkloader/ima3.js (469)
+[0319/124040.576:INFO:CONSOLE(1)] "Attempting native browser m3u8 playback.", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124040.586:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can remove its sandboxing.", source: about:srcdoc (0)
+[0319/124040.591:INFO:CONSOLE(1)] "Origin trial controlled feature not enabled: 'attribution-reporting'.", source: https://a.teads.tv/media/format/v3/teads-format.min.js (1)
+[0319/124040.638:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+
+[0319/124040.776:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 7
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124040.777:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 8
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124040.794:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 9
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124040.794:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 10
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124040.833:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 11
+ ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124040.866:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 12
+ ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.003:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 8
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.003:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 14
+ ▪ location: about:srcdoc", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.003:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 7
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.003:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 8
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.003:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 14
+ ▪ location: about:srcdoc", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.112:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 10
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.112:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 16
+ ▪ location: about:srcdoc", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.112:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 9
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.112:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 10
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.112:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 16
+ ▪ location: about:srcdoc", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.135:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 17
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.135:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 17
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.174:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 17
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.179:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 1
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.179:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 3
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.180:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 13
+ ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.180:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 7
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.180:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 8
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.180:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 14
+ ▪ location: about:srcdoc", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.180:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 15
+ ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.180:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 9
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.180:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 10
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.180:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 16
+ ▪ location: about:srcdoc", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.180:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 2
+ ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
+[0319/124041.181:INFO:CONSOLE(1)] "%c STNVideo Embed [NZZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 17
+ ▪ location: https://www.ratemyprofessors.com/professor/2637066", source: https://www.ratemyprofessors.com/static/js/main.83c5d589.js (1)
