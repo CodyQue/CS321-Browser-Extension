@@ -1,0 +1,10 @@
+2023/03/19-18:37:42.851 2bd4 Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\Professor Ratings\tmp\Default\Session Storage/MANIFEST-000001
+2023/03/19-18:37:42.852 2bd4 Recovering log #51
+2023/03/19-18:37:42.852 2bd4 Level-0 table #53: started
+2023/03/19-18:37:42.854 2bd4 Level-0 table #53: 36649 bytes OK
+2023/03/19-18:37:42.854 2bd4 Recovering log #53
+2023/03/19-18:37:42.854 2bd4 Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\Professor Ratings\tmp\Default\Session Storage/000053.log 
+2023/03/19-18:37:42.855 2bd4 Delete type=0 #51
+2023/03/19-18:37:42.855 2bd4 Delete type=2 #54
+2023/03/19-18:37:45.579 4870 Level-0 table #55: started
+2023/03/19-18:37:45.582 4870 Level-0 table #55: 34312 bytes OK
