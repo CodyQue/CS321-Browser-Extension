@@ -4,7 +4,8 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss -i src/styles.css -o public/styles.css --watch"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,7 @@
     "sqlite3": "^5.1.6"
   },
   "keywords": [],
-  "devDependencies": {}
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
 }
