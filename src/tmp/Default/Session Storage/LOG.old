@@ -1,18 +1,5 @@
-2023/03/19-20:06:15.846 56c Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\Professor Ratings\tmp\Default\Session Storage/MANIFEST-000001
-2023/03/19-20:06:15.846 56c Recovering log #53
-2023/03/19-20:06:15.846 56c Level-0 table #55: started
-2023/03/19-20:06:15.848 56c Level-0 table #55: 34312 bytes OK
-2023/03/19-20:06:15.848 56c Recovering log #54
-2023/03/19-20:06:15.848 56c Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\Professor Ratings\tmp\Default\Session Storage/000054.log 
-2023/03/19-20:06:15.849 56c Delete type=0 #53
-2023/03/19-20:06:15.849 2fc4 Compacting 4@0 + 1@1 files
-2023/03/19-20:06:15.854 2fc4 Generated table #56@0: 1293 keys, 232990 bytes
-2023/03/19-20:06:15.854 2fc4 Compacted 4@0 + 1@1 files => 232990 bytes
-2023/03/19-20:06:15.855 2fc4 compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/03/19-20:06:15.855 2fc4 Delete type=2 #47
-2023/03/19-20:06:15.855 2fc4 Delete type=2 #49
-2023/03/19-20:06:15.855 2fc4 Delete type=2 #51
-2023/03/19-20:06:15.856 2fc4 Delete type=2 #53
-2023/03/19-20:06:15.856 2fc4 Delete type=2 #55
-2023/03/19-20:06:19.319 8144 Level-0 table #58: started
-2023/03/19-20:06:19.323 8144 Level-0 table #58: 65856 bytes OK
+2023/04/06-09:19:34.400 3b58 Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\tmp\Default\Session Storage/MANIFEST-000001
+2023/04/06-09:19:34.400 3b58 Recovering log #63
+2023/04/06-09:19:34.401 3b58 Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\tmp\Default\Session Storage/000063.log 
+2023/04/06-09:19:36.582 6a54 Level-0 table #68: started
+2023/04/06-09:19:36.586 6a54 Level-0 table #68: 35476 bytes OK

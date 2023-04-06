@@ -1,12 +1,10 @@
-2023/03/23-10:53:37.143 3d20 Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\Professor Ratings\tmp\Default\Session Storage/MANIFEST-000001
-2023/03/23-10:53:37.146 3d20 Recovering log #54
-2023/03/23-10:53:37.148 3d20 Level-0 table #58: started
-2023/03/23-10:53:37.151 3d20 Level-0 table #58: 65856 bytes OK
-2023/03/23-10:53:37.151 3d20 Recovering log #57
-2023/03/23-10:53:37.152 3d20 Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\Professor Ratings\tmp\Default\Session Storage/000057.log 
-2023/03/23-10:53:37.153 3d20 Delete type=0 #54
-2023/03/23-10:53:43.320 cc Level-0 table #60: started
-2023/03/23-10:53:43.322 cc Level-0 table #60: 47070 bytes OK
-2023/03/23-10:53:43.323 cc Delete type=0 #57
-2023/03/23-10:54:06.123 3d20 Level-0 table #62: started
-2023/03/23-10:54:06.126 3d20 Level-0 table #62: 78814 bytes OK
+2023/04/06-09:20:32.649 64b4 Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\tmp\Default\Session Storage/MANIFEST-000001
+2023/04/06-09:20:32.649 64b4 Recovering log #63
+2023/04/06-09:20:32.649 64b4 Level-0 table #67: started
+2023/04/06-09:20:32.651 64b4 Level-0 table #67: 35476 bytes OK
+2023/04/06-09:20:32.651 64b4 Recovering log #67
+2023/04/06-09:20:32.651 64b4 Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\tmp\Default\Session Storage/000067.log 
+2023/04/06-09:20:32.652 64b4 Delete type=0 #63
+2023/04/06-09:20:32.652 64b4 Delete type=2 #68
+2023/04/06-09:20:34.740 210c Level-0 table #69: started
+2023/04/06-09:20:34.744 210c Level-0 table #69: 33330 bytes OK

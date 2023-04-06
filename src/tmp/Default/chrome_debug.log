@@ -1,147 +1,110 @@
-[0323/105337.355:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
-ERROR: Couldn't read tbsCertificate as SEQUENCE
-ERROR: Failed parsing Certificate
-
-[0323/105337.736:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.042:INFO:CONSOLE(1)] "https://www.ratemyprofessors.com/search/teachers?query=Kevin%20Andrea", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.051:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.546:INFO:CONSOLE(1)] "{"mode":"alternating-thumbnails-a","placement":"Below Article Thumbnails","target_type":"mix","container":"taboola-below-article-thumbnails"}", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.550:INFO:CONSOLE(1)] "Below Article Thumbnails alternating-thumbnails-a", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.775:INFO:CONSOLE(1)] "{"name":"Below Article Thumbnails","nb":"1","eof":"","fti":"cheddar-ratemyprofessor-feed-action-bucket-1677836206279","vsm":true}", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.779:INFO:CONSOLE(1)] "Start Rendering Below Article Thumbnails | Card 1", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.786:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 1", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.788:INFO:CONSOLE(1)] "{"name":"Below Article Thumbnails","nb":"1","eof":"","fti":"cheddar-ratemyprofessor-feed-action-bucket-1677836206279","vsm":true}", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.789:INFO:CONSOLE(1)] "Start Rendering Below Article Thumbnails | Card 2", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.791:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 2", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.808:INFO:CONSOLE(1)] "Below Article Thumbnails alternating-thumbnails-a", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.810:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 1", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.812:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 2", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.816:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 1", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.825:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 2", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.827:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 1", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105338.830:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 2", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.090:INFO:CONSOLE(1)] "{"name":"Below Article Thumbnails","nb":"2","eof":"","fti":"","vsm":false}", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.090:INFO:CONSOLE(1)] "Start Rendering Below Article Thumbnails | Card 3", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.098:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 3", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.098:INFO:CONSOLE(1)] "{"name":"Below Article Thumbnails","nb":"2","eof":"","fti":"","vsm":false}", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.099:INFO:CONSOLE(1)] "Start Rendering Below Article Thumbnails | Card 4", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.111:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 4", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.112:INFO:CONSOLE(1)] "{"name":"Below Article Thumbnails","nb":"2","eof":"","fti":"","vsm":false}", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.112:INFO:CONSOLE(1)] "Start Rendering Below Article Thumbnails | Card 5", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.116:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 5", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.117:INFO:CONSOLE(1)] "{"name":"Below Article Thumbnails","nb":"2","eof":"","fti":"","vsm":false}", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.117:INFO:CONSOLE(1)] "{"name":"Below Article Thumbnails","nb":"2","eof":"","fti":"","vsm":false}", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.117:INFO:CONSOLE(1)] "{"name":"Below Article Thumbnails","nb":"2","eof":"","fti":"","vsm":false}", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.118:INFO:CONSOLE(1)] "{"name":"Below Article Thumbnails","nb":"2","eof":"","fti":"","vsm":false}", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.124:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 3", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.125:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 4", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.126:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 5", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.139:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 3", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.139:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 4", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.139:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 5", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.145:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 3", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.145:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 4", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105339.145:INFO:CONSOLE(1)] "Finish Rendering Below Article Thumbnails | Card 5", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105343.268:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
-ERROR: Couldn't read tbsCertificate as SEQUENCE
-ERROR: Failed parsing Certificate
-
-[0323/105344.395:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
-ERROR: Couldn't read tbsCertificate as SEQUENCE
-ERROR: Failed parsing Certificate
-
-[0323/105404.565:INFO:CONSOLE(3)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Embed Load Build: 7.14.0", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0323/105404.565:INFO:CONSOLE(3)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Reading Environment", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0323/105404.565:INFO:CONSOLE(3)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Environment
+[0406/092032.724:INFO:CONSOLE(3)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Embed Load Build: 7.15.0", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0406/092032.724:INFO:CONSOLE(3)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Reading Environment", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0406/092032.725:INFO:CONSOLE(3)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Environment
  ▪ In Root: true
  ▪ Master Exists: false
  ▪ I Am Master: false", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0323/105404.565:INFO:CONSOLE(3)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Taking Control
+[0406/092032.725:INFO:CONSOLE(3)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Taking Control
  ▪ Master Exists: true
  ▪ I Am Master: true
- ▪ Master: TAN", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0323/105404.565:INFO:CONSOLE(3)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Scanning Root - Persistent Monitoring", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0323/105404.799:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Loading Player
- ▪ Document ID: 1
- ▪ Source: https://embed.sendtonews.com/easy-stn-player/7.14.0/easy-stn-player.js", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105404.973:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+ ▪ Master: OAB", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0406/092032.725:INFO:CONSOLE(3)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Scanning Root - Persistent Monitoring", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0406/092032.769:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
 ERROR: Couldn't read tbsCertificate as SEQUENCE
 ERROR: Failed parsing Certificate
 
-[0323/105404.990:INFO:CONSOLE(1)] "%c STNVideo Embed [KOZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Embed Load Build: 7.14.0", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105404.990:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Sending Environment", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105404.990:INFO:CONSOLE(1)] "%c STNVideo Embed [KOZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Reading Environment", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105404.990:INFO:CONSOLE(1)] "%c STNVideo Embed [KOZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Environment
+[0406/092033.151:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Loading Player
+ ▪ Document ID: 1
+ ▪ Source: https://embed.sendtonews.com/easy-stn-player/7.15.0/easy-stn-player.js", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.322:INFO:CONSOLE(1)] "%c STNVideo Embed [WLM] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Embed Load Build: 7.15.0", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.322:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Sending Environment", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.322:INFO:CONSOLE(1)] "%c STNVideo Embed [WLM] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Reading Environment", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.322:INFO:CONSOLE(1)] "%c STNVideo Embed [WLM] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Environment
  ▪ In Root: true
  ▪ Master Exists: true
- ▪ I Am Master: false", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105404.990:INFO:CONSOLE(1)] "%c STNVideo Embed [KOZ] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  I am Not Master
- ▪ Terminating", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105405.218:INFO:CONSOLE(1)] "Hls.js is not supported in this browser.", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105405.226:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105405.261:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105405.436:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+ ▪ I Am Master: false", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.322:INFO:CONSOLE(1)] "%c STNVideo Embed [WLM] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  I am Not Master
+ ▪ Terminating", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.461:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.530:INFO:CONSOLE(1)] "[mobx] Observable '@212.impression' being read outside a reactive context.", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.536:INFO:CONSOLE(1)] "Hls.js is not supported in this browser.", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.540:INFO:CONSOLE(1)] "[MobX] Since strict-mode is enabled, changing (observed) observable values without using an action is not allowed. Tried to modify: @212.preventImaRefreshOfGpt", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.694:INFO:CONSOLE(1)] "[GPT] Invalid arguments: SizeMappingBuilder.addSize([0, 0], [[300, 50], [320, 50]]). All zero-area slot sizes were removed.", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.694:INFO:CONSOLE(1)] "[GPT] Invalid arguments: SizeMappingBuilder.addSize([984, 0], [[728, 90]]). All zero-area slot sizes were removed.", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.694:INFO:CONSOLE(1)] "[GPT] Invalid arguments: SizeMappingBuilder.addSize([1224, 0], [[728, 90], [970, 90]]). All zero-area slot sizes were removed.", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.694:INFO:CONSOLE(1)] "[GPT] Invalid arguments: SizeMappingBuilder.addSize([0, 0], [[300, 250]]). All zero-area slot sizes were removed.", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.828:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
 ERROR: Couldn't read tbsCertificate as SEQUENCE
 ERROR: Failed parsing Certificate
 
-[0323/105405.510:INFO:CONSOLE(467)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can remove its sandboxing.", source: https://imasdk.googleapis.com/js/sdkloader/ima3.js (467)
-[0323/105405.559:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can remove its sandboxing.", source: about:srcdoc (0)
-[0323/105405.593:INFO:CONSOLE(1)] "Attempting native browser m3u8 playback.", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105405.609:INFO:CONSOLE(1)] "Origin trial controlled feature not enabled: 'attribution-reporting'.", source: https://a.teads.tv/media/format/v3/teads-format.min.js (1)
-[0323/105405.855:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+[0406/092033.836:INFO:CONSOLE(468)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can remove its sandboxing.", source: https://imasdk.googleapis.com/js/sdkloader/ima3.js (468)
+[0406/092033.903:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092033.915:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+
+[0406/092033.929:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can remove its sandboxing.", source: about:srcdoc (0)
+[0406/092033.941:INFO:CONSOLE(1)] "Attempting native browser m3u8 playback.", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.066:INFO:CONSOLE(1)] "Origin trial controlled feature not enabled: 'attribution-reporting'.", source: https://a.teads.tv/media/format/v3/teads-format.min.js (1)
+[0406/092034.130:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+
+[0406/092034.245:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
  ▪ id: 7
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105405.855:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.246:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
  ▪ id: 8
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105405.907:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 9
- ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.051:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 11
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.051:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 11
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.094:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 11
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.098:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 8
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.099:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 12
- ▪ location: about:srcdoc", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.099:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 7
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.099:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 8
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.099:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 12
- ▪ location: about:srcdoc", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.099:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 1
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.099:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 4
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.099:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.265:INFO:CONSOLE(1)] "[object Object]", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.305:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
  ▪ id: 10
- ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.100:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 7
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.100:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 8
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.100:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.502:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
  ▪ id: 12
- ▪ location: about:srcdoc", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.100:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 2
- ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
-[0323/105406.100:INFO:CONSOLE(1)] "%c STNVideo Embed [TAN] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.502:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 12
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.542:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 12
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.703:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 8
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.703:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 13
+ ▪ location: about:srcdoc", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.703:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 7
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.704:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 8
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.704:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 13
+ ▪ location: about:srcdoc", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.704:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 1
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.704:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 3
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.704:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
  ▪ id: 11
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.bd714656.js (1)
+ ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.704:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 7
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.704:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 8
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.705:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 13
+ ▪ location: about:srcdoc", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.705:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 2
+ ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
+[0406/092034.705:INFO:CONSOLE(1)] "%c STNVideo Embed [OAB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 12
+ ▪ location: https://www.ratemyprofessors.com/professor/2366288", source: https://www.ratemyprofessors.com/static/js/main.1dab9278.js (1)
