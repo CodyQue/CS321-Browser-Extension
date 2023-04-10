@@ -1,0 +1,10 @@
+2023/04/06-09:20:32.649 64b4 Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\tmp\Default\Session Storage/MANIFEST-000001
+2023/04/06-09:20:32.649 64b4 Recovering log #63
+2023/04/06-09:20:32.649 64b4 Level-0 table #67: started
+2023/04/06-09:20:32.651 64b4 Level-0 table #67: 35476 bytes OK
+2023/04/06-09:20:32.651 64b4 Recovering log #67
+2023/04/06-09:20:32.651 64b4 Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\tmp\Default\Session Storage/000067.log 
+2023/04/06-09:20:32.652 64b4 Delete type=0 #63
+2023/04/06-09:20:32.652 64b4 Delete type=2 #68
+2023/04/06-09:20:34.740 210c Level-0 table #69: started
+2023/04/06-09:20:34.744 210c Level-0 table #69: 33330 bytes OK
