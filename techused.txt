@@ -5,3 +5,5 @@ puppeteer
 sqlite
 calender
 css
+
+API's: Microsoft Azure App Services
