@@ -46,7 +46,7 @@ function getTime()
       if (err) return console.error(err.message);
     });
 
-    if (userMinute >= 0 && userMinute < 16) {
+    /*if (userMinute >= 0 && userMinute < 16) {
       userMinute = 15;
     }
     if (userMinute >= 16 && userMinute < 31) {
@@ -58,7 +58,7 @@ function getTime()
     if (userMinute >= 46 && userMinute < 61) {
       userMinute = 0;
       userHour + 1;
-    }
+    }*/
     var testDate = new Date(
       userYear,
       userMonth - 1,
