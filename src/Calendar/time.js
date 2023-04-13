@@ -74,13 +74,18 @@ function getTime()
       0
     );
     let result = dateMath(testDate);
-    if (Date.parse(testDate) - Date.parse(new Date()) < 0) {
+    if (Date.parse(testDate) - Date.parse(new Date()) < 0) 
+    {
       console.log("Date in the past");
-    } else if (Date.parse(testDate) - Date.parse(new Date()) < 3600000 * 72) {
+    } 
+    else if (Date.parse(testDate) - Date.parse(new Date()) < 3600000 * 72) 
+    {
       console.log("This is Urgent!");
       console.log("Time until due:");
       console.log(result);
-    } else {
+    } 
+    else 
+    {
       console.log("Time until due:");
       console.log(result);
     }

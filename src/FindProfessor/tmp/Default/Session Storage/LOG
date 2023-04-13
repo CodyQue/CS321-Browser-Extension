@@ -1,0 +1,15 @@
+2023/04/12-20:46:01.180 6058 Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\FindProfessor\tmp\Default\Session Storage/MANIFEST-000001
+2023/04/12-20:46:01.180 6058 Recovering log #14
+2023/04/12-20:46:01.181 6058 Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\FindProfessor\tmp\Default\Session Storage/000014.log 
+2023/04/12-20:46:06.893 6058 Level-0 table #18: started
+2023/04/12-20:46:06.899 6058 Level-0 table #18: 46046 bytes OK
+2023/04/12-20:46:06.901 6058 Delete type=0 #14
+2023/04/12-20:46:06.901 6058 Compacting 4@0 + 1@1 files
+2023/04/12-20:46:06.903 6058 Generated table #19@0: 224 keys, 37434 bytes
+2023/04/12-20:46:06.903 6058 Compacted 4@0 + 1@1 files => 37434 bytes
+2023/04/12-20:46:06.904 6058 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/04/12-20:46:06.905 6058 Delete type=2 #8
+2023/04/12-20:46:06.905 6058 Delete type=2 #11
+2023/04/12-20:46:06.905 6058 Delete type=2 #13
+2023/04/12-20:46:06.905 6058 Delete type=2 #15
+2023/04/12-20:46:06.905 6058 Delete type=2 #18
