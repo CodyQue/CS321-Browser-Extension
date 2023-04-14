@@ -19,7 +19,7 @@
         {
             e.preventDefault();
             if (input.value == '') return;
-            const res = await fetch('https://cs321-project.azurewebsites.net/',
+            const res = await fetch('https://cs321-project.azurewebsites.net/users',
             {
                 method: 'POST',
                 headers: {
