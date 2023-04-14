@@ -8,6 +8,10 @@
 const prompt = require('prompt-sync')();
 const sqlite3 = require("sqlite3").verbose();
 const puppeteer = require("puppeteer");
+const express = require("express");
+
+const app = express();
+const PORT = 8000;
 
 let profName = "";
 let URL = "";
@@ -19,6 +23,7 @@ let overallRating = 0;
  */
 function organizeComments(arr)
 {
+    console.log("Organizing comments\n");
     //console.log(arr);
     const newArr = [];
     let max = arr.length;
@@ -183,11 +188,19 @@ function findProfInDatabase(name)
         }
     });
 }
+let name = "";
 function askUser()
 {
-    const name = prompt("What is the professor's name?: ");
+    name = prompt("What is the professor's name?: ");
     //console.log(`Finding ${name}`);
     findProfInDatabase(name);
 }
 
 askUser();
+
+app.use.express.static('../../interface');
+
+/*app.get('/results', (req, res) => {
+    res.status(200).send('<h1>' + name + '<h1>');
+})
+app.listen(PORT, () => console.log("server running on PORT ${PORT}"))*/

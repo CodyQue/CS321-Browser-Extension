@@ -36,7 +36,7 @@ function getTime()
     const userDesc = prompt("What is the description of the assignment? ");
     const userYear = prompt("What year is the assignment due? ");
     const userMonth = prompt("What Month is the assignment due? ");
-    const userDay = prompt("What Day is the assignment due? ");
+    var userDay = prompt("What Day is the assignment due? ");
     var userHour = prompt("What Hour is the assignment due? ");
     var userMinute = prompt("What Minute is the assignment due? ");
 
@@ -45,20 +45,25 @@ function getTime()
     db.run(sql, [userName, userDesc, userYear, userMonth, userDay, userHour, userMinute], (err)=>{
       if (err) return console.error(err.message);
     });
-
-    if (userMinute >= 0 && userMinute < 16) {
+    
+    if (userMinute > 0 && userMinute < 16) {
       userMinute = 15;
     }
-    if (userMinute >= 16 && userMinute < 31) {
+    else if (userMinute >= 16 && userMinute < 31) {
       userMinute = 30;
     }
-    if (userMinute >= 31 && userMinute < 46) {
+    else if (userMinute >= 31 && userMinute < 46) {
       userMinute = 45;
     }
-    if (userMinute >= 46 && userMinute < 61) {
+    else if (userMinute >= 46 && userMinute < 61) {
       userMinute = 0;
-      userHour + 1;
+      userHour++;
+      if(userHour>23){
+        userHour=0;
+        userDay++;
+      }
     }
+    
     var testDate = new Date(
       userYear,
       userMonth - 1,
@@ -69,13 +74,18 @@ function getTime()
       0
     );
     let result = dateMath(testDate);
-    if (Date.parse(testDate) - Date.parse(new Date()) < 0) {
+    if (Date.parse(testDate) - Date.parse(new Date()) < 0) 
+    {
       console.log("Date in the past");
-    } else if (Date.parse(testDate) - Date.parse(new Date()) < 3600000 * 72) {
+    } 
+    else if (Date.parse(testDate) - Date.parse(new Date()) < 3600000 * 72) 
+    {
       console.log("This is Urgent!");
       console.log("Time until due:");
       console.log(result);
-    } else {
+    } 
+    else 
+    {
       console.log("Time until due:");
       console.log(result);
     }

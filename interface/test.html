@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input"/>
+    <button id="post">ENTER</button>
+    <script>
+        const input = document.getElementById("input");
+        const postButton = document.getElementById("post");
+
+        postButton.addEventListener('click', postInfo);
+
+        async function postInfo(e) 
+        {
+            e.preventDefault();
+            if (input.value == '') return;
+            const res = await fetch('https://cs321-project.azurewebsites.net/',
+            {
+                method: 'POST',
+                headers: {
+                    "Content-Type": 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify ({
+                    parcel: input.value
+                })
+            })
+        }
+    </script>
+</body>
+</html>

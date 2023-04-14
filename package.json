@@ -2,11 +2,11 @@
   "name": "cs321-browser-extension",
   "version": "1.0.0",
   "description": "test",
-  "main": "./src/index.js",
+  "main": "./testing/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "tailwindcss -i src/styles.css -o public/styles.css --watch",
-    "start": "nodemon /src/index.js"
+    "start": "nodemon ./testing/server.js"
   },
   "repository": {
     "type": "git",
