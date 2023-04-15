@@ -5,5 +5,8 @@ puppeteer
 sqlite
 calender
 css
+express.js
+cookie-parser
+morgan
 
 API's: Microsoft Azure App Services
