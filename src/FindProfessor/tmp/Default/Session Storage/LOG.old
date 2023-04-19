@@ -1,7 +1,6 @@
-2023/04/12-20:45:03.849 7fc0 Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\FindProfessor\tmp\Default\Session Storage/MANIFEST-000001
-2023/04/12-20:45:03.849 7fc0 Recovering log #13
-2023/04/12-20:45:03.850 7fc0 Level-0 table #15: started
-2023/04/12-20:45:03.852 7fc0 Level-0 table #15: 34623 bytes OK
-2023/04/12-20:45:03.852 7fc0 Recovering log #14
-2023/04/12-20:45:03.852 7fc0 Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\FindProfessor\tmp\Default\Session Storage/000014.log 
-2023/04/12-20:45:03.853 7fc0 Delete type=0 #13
+2023/04/19-09:34:09.496 3408 Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\FindProfessor\tmp\Default\Session Storage/MANIFEST-000001
+2023/04/19-09:34:09.496 3408 Recovering log #21
+2023/04/19-09:34:09.496 3408 Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\FindProfessor\tmp\Default\Session Storage/000021.log 
+2023/04/19-09:34:15.424 5408 Level-0 table #25: started
+2023/04/19-09:34:15.426 5408 Level-0 table #25: 50555 bytes OK
+2023/04/19-09:34:15.427 5408 Delete type=0 #21

@@ -43,7 +43,7 @@
             if (input.value == '') return;
             
             //Check /test to make sure that the input went through 
-            const res = await fetch('https://cs321-project.azurewebsites.net/users',
+            const res = await fetch('http://localhost:8000/users',
             {
                 method: 'POST',
                 headers: {
@@ -51,7 +51,7 @@
                     'Accept': 'application/json'
                 },
                 body: JSON.stringify ({
-                    parcel: (input.value + " send to prof")
+                    parcel: (input.value + " sendToProf")
                 })
             })
         }

@@ -15,7 +15,7 @@ const db = new sqlite3.Database('./profURL.db', sqlite3.OPEN_READWRITE, (err)=> 
     console.log("Connected to database");
 });
 
-db.run('CREATE TABLE Professor_Info(Professor_name, URL, delValue)');
+db.run('CREATE TABLE Professor_Info(Professor_name, URL, Overall_Rating)');
 
 var count = 0;
 fs.readFile('profNames.txt', 'utf8', (err, data) => {
@@ -27,24 +27,24 @@ fs.readFile('profNames.txt', 'utf8', (err, data) => {
     for(let i = 0; i < temp.length; ++i)
     {
         let temp2 = temp[i].split(' ');
-        if (temp2[2].includes("https://www.ratemyprofessors.com/search/teachers?query="))
+        if (temp2[2].includes("https://www.ratemyprofessors.com/search/teachers?query=")) //Professors with 2 names (first and last name)
         {
             let name = temp2[0] + " " + temp2[1];
             let URL = temp2[2];
-            let delValue = 1;
-            const sql = "INSERT INTO Professor_Info (Professor_name, URL, delValue) Values(?,?,?)";
-            db.run(sql, [name, URL, delValue], (err)=>{
+            let rating = 0;
+            const sql = "INSERT INTO Professor_Info (Professor_name, URL, Overall_Rating) Values(?,?,?)";
+            db.run(sql, [name, URL, rating], (err)=>{
                 if (err) return console.error(err.message);
             });
             console.log("Adding: " + name + " , Count: " + i+1);
         }
-        else
+        else //This is for professors with 3 names (first, middle, and last name)
         {
             let name = temp2[0] + " " + temp2[1] + " " + temp2[2];
             let URL = temp2[3];
-            let delValue = 1;
-            const sql = "INSERT INTO Professor_Info (Professor_name, URL, delValue) Values(?,?,?)";
-            db.run(sql, [name, URL, delValue], (err)=>{
+            let rating = 0;
+            const sql = "INSERT INTO Professor_Info (Professor_name, URL, Overall_Rating) Values(?,?,?)";
+            db.run(sql, [name, URL, rating], (err)=>{
                 if (err) return console.error(err.message);
             });
             console.log("Adding: " + name + " , Count: " + i+1);

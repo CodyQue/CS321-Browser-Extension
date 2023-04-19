@@ -11,7 +11,7 @@ const db = new sqlite3.Database('./profURL.db', sqlite3.OPEN_READWRITE, (err)=> 
     console.log("Connected to database");
 });
 
-const sql = 'DELETE FROM Professor_Info WHERE delValue = 1';
+const sql = 'DROP TABLE Professor_Info';
 
 db.all(sql, [], (err, rows) => {
     if (err) return console.error(err.message);

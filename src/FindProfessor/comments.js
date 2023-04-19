@@ -112,6 +112,16 @@ function findProfAndRating(name, URL)
         const browser = await puppeteer.launch({headless: true, defaultViewport: false, userDataDir: "./tmp"});
         const page = await browser.newPage();
         await page.goto(URL);
+        try //Rate My Professor has a "cookies" page when new user goes to the website. This clicks the "close" button if this shows up
+        {
+            const closeButton = await page.$('.Buttons__Button-sc-19xdot-1.CCPAModal__StyledCloseButton-sc-10x9kq-2.gvGrz');
+            await closeButton.click();
+        }
+
+        catch(error)
+        {
+            console.log("No button exists");
+        }
         const t = await page.evaluate(() => document.body.innerText);
         var x = t.split("\n");
         let profCount = -1;
@@ -124,10 +134,18 @@ function findProfAndRating(name, URL)
             if (x[i].includes(n[0]) == true && x[i].includes(n[n.length-1]) == true)
             {
                 profCount++;
-                if (x[i+2].includes("George Mason University"))
+                if (x[i+2].includes("George Mason University")) //Finds the rating of professor that is in GMU
                 {
                     overallRating = parseFloat(x[i-2]);
+                    const db = new sqlite3.Database('./profURL.db', sqlite3.OPEN_READWRITE, (err)=> {
+                        if (err) return console.error(err.message);
+                        //console.log("Connected to database");
+                    });
                     //console.log("Prof is at: " + profCount + ", Overall Rating: " + overallRating);
+                    const sql = "UPDATE Professor_Info SET Overall_Rating = " + overallRating + " WHERE Professor_name = '" + name + "'";
+                    db.all(sql, [], (err, rows) => {
+                        if (err) return console.error(err.message);
+                    });
                     break;
                 }
             }
@@ -143,6 +161,19 @@ function findProfAndRating(name, URL)
                 {
                     //console.log("FOUND PROF PAGE");
                     await page.goto(hrefs[i]); //Goes to page
+                    try{
+                        while(true)
+                        {
+                            await page.click('button.Buttons__Button-sc-19xdot-1.PaginationButton__StyledPaginationButton-txi1dr-1.gjQZal');
+                            console.log("EXPANDED");
+                            await new Promise(resolve => setTimeout(resolve, 2000));
+                        }
+                    }
+                    catch(error)
+                    {
+                        console.log("NOT EXPANDED");
+                    }
+                    await new Promise(resolve => setTimeout(resolve, 5000));
                     const comments = await page.evaluate(() => document.body.innerText);
                     //console.log(comments);
                     var arr = comments.split("\n");
@@ -180,13 +211,14 @@ function findProfInDatabase(name)
             profName = rows[0].Professor_name;
             URL = rows[0].URL;
             //console.log("Prof Name: " + profName + ", URL: " + URL);
-            findProfAndRating(name, URL);
+            findProfAndRating(name, URL, db);
         }
         catch(error)
         {
             console.log("Cannot find professor");
         }
     });
+    db.close();
 }
 let name = "";
 function askUser()
@@ -198,7 +230,7 @@ function askUser()
 
 askUser();
 
-app.use.express.static('../../interface');
+//app.use.express.static('../../interface');
 
 /*app.get('/results', (req, res) => {
     res.status(200).send('<h1>' + name + '<h1>');

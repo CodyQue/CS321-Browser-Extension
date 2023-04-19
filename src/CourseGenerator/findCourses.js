@@ -1,39 +1,45 @@
 const puppeteer = require("puppeteer");
 
-console.log("Begin");
-(async () => {
-    const browser = await puppeteer.launch({headless: false, defaultViewport: false, userDataDir: "./tmp"});
-    const page = await browser.newPage();
+let schedule = new Map();
 
-    await page.goto('https://patriotweb.gmu.edu/pls/prod/bwckschd.p_disp_dyn_sched');
-    
-    //await page.screenshot({ path: 'example.png'});
-    //const handles = await page.$$("s-main-slot s-result-list s-search-results sg-row");
-    //const comments = await page.evaluate(() => document.body.innerText);
-    //var arr = comments.split("\n");
-    //console.log(arr);
-    //console.log("Done");
+async function generateSchedule(arr)
+{
+    console.log("Begin");
+    (async () => {
+        const browser = await puppeteer.launch({headless: true, defaultViewport: false, userDataDir: "./tmp"});
+        const page = await browser.newPage();
 
-    await page.select('select[name="p_term"]', '202370');
+        for(let i = 0; i < arr.length; ++i)
+        {
+            let course = arr[i].split(" ");
+            console.log(course);
+            await page.goto('https://patriotweb.gmu.edu/pls/prod/bwckschd.p_disp_dyn_sched');
+            await page.select('select[name="p_term"]', '202370');
+            await page.click('input[type="submit"]'); // click the submit button
+            await new Promise(resolve => setTimeout(resolve, 2500));
+            await page.waitForSelector('#subj_id');
+            await page.select('#subj_id', course[0]);
+            await new Promise(resolve => setTimeout(resolve, 2500));
+            await page.waitForSelector('#crse_id');
+            await page.type('#crse_id', course[1]);
+            await page.click('input[type="submit"]'); // click the submit button
+            await new Promise(resolve => setTimeout(resolve, 2500));
+            const html = await page.content();
+            let newArr = html.split("\n");
+            for(let j = 0; j < newArr.length; ++j)
+            {
+                //console.log("Comparing " + newArr[i] + " with " + '<td class="dddefault">Class</td>');
+                if (newArr[j].localeCompare('<td class="dddefault">Class</td>') == 0)
+                {
+                    console.log("Time: " + newArr[j+1] + "\n Professor: " + newArr[j+6]);
+                }
+            }
+        }
+        
+        //console.log(newArr);
+        await browser.close();
+    })();
+}
 
-    //console.log("Went through\n");
-
-    await page.click('input[type="submit"]'); // click the submit button
-    await page.waitForNavigation();
-
-    await page.waitForSelector('#subj_id');
-    await page.select('#subj_id', 'CS');
-
-    await page.waitForNavigation();
-
-    await page.waitForSelector('#crse_id');
-    await page.type('#crse_id', '450');
-
-    await page.click('input[type="submit"]'); // click the submit button
-    await page.waitForNavigation();
-
-    const html = await page.content();
-
-    console.log("Done\n");
-    //await browser.close();
-})();
+let arr = ["CS 483", "CS 452", "CS 306", "CS 468", "GGS 101"];
+generateSchedule(arr);
