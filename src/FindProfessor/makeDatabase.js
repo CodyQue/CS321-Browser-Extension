@@ -40,7 +40,7 @@ fs.readFile('profNames.txt', 'utf8', (err, data) => {
         }
         else //This is for professors with 3 names (first, middle, and last name)
         {
-            let name = temp2[0] + " " + temp2[1] + " " + temp2[2];
+            let name = temp2[0] + " " + temp2[2];
             let URL = temp2[3];
             let rating = 0;
             const sql = "INSERT INTO Professor_Info (Professor_name, URL, Overall_Rating) Values(?,?,?)";

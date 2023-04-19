@@ -1,79 +1,66 @@
-[0419/093458.714:INFO:CONSOLE(3)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://static.hotjar.com/c/hotjar-1667000.js?sv=7 (3)
-[0419/093458.796:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
-ERROR: Couldn't read tbsCertificate as SEQUENCE
-ERROR: Failed parsing Certificate
-
-[0419/093459.253:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093459.290:INFO:CONSOLE(1)] "1681911299290 : [OpenWrap] : [Error] GPT-Slot not found for divId: ad_rec_01", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093459.353:INFO:CONSOLE(1)] "[GPT] Div ID passed to googletag.display() does not match any defined slots: ad_rec_01.", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093459.769:INFO:CONSOLE(3)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Embed Load Build: 7.15.1-G", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0419/093459.769:INFO:CONSOLE(3)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Reading Environment", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0419/093459.769:INFO:CONSOLE(3)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Environment
+[0419/115117.285:ERROR:os_crypt_win.cc(83)] Failed to decrypt: Key not valid for use in specified state. (0x8009000B)
+[0419/115122.363:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115122.920:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115124.415:INFO:CONSOLE(3)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Embed Load Build: 7.15.1-G", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0419/115124.416:INFO:CONSOLE(3)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Reading Environment", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0419/115124.416:INFO:CONSOLE(3)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Environment
  ▪ In Root: true
  ▪ Master Exists: false
  ▪ I Am Master: false", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0419/093459.769:INFO:CONSOLE(3)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Taking Control
+[0419/115124.417:INFO:CONSOLE(3)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Taking Control
  ▪ Master Exists: true
  ▪ I Am Master: true
- ▪ Master: FMX", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0419/093459.769:INFO:CONSOLE(3)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Scanning Root - Persistent Monitoring", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0419/093500.004:INFO:CONSOLE(1)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Loading Player
+ ▪ Master: BWO", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0419/115124.417:INFO:CONSOLE(3)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Scanning Root - Persistent Monitoring", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
+[0419/115124.890:INFO:CONSOLE(1)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Loading Player
  ▪ Document ID: 1
- ▪ Source: https://embed.sendtonews.com/easy-stn-player/7.15.1-G/easy-stn-player.js", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093500.148:INFO:CONSOLE(1)] "%c STNVideo Embed [CVL] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Embed Load Build: 7.15.1-G", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093500.148:INFO:CONSOLE(1)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Sending Environment", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093500.148:INFO:CONSOLE(1)] "%c STNVideo Embed [CVL] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Reading Environment", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093500.149:INFO:CONSOLE(1)] "%c STNVideo Embed [CVL] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Environment
+ ▪ Source: https://embed.sendtonews.com/easy-stn-player/7.15.1-G/easy-stn-player.js", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115125.046:INFO:CONSOLE(1)] "%c STNVideo Embed [OJV] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Embed Load Build: 7.15.1-G", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115125.046:INFO:CONSOLE(1)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Sending Environment", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115125.046:INFO:CONSOLE(1)] "%c STNVideo Embed [OJV] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Reading Environment", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115125.046:INFO:CONSOLE(1)] "%c STNVideo Embed [OJV] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Environment
  ▪ In Root: true
  ▪ Master Exists: true
- ▪ I Am Master: false", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093500.149:INFO:CONSOLE(1)] "%c STNVideo Embed [CVL] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  I am Not Master
- ▪ Terminating", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093500.254:INFO:CONSOLE(1)] "[mobx] Observable '@212.impression' being read outside a reactive context.", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093500.258:INFO:CONSOLE(1)] "Hls.js is not supported in this browser.", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093500.261:INFO:CONSOLE(1)] "[MobX] Since strict-mode is enabled, changing (observed) observable values without using an action is not allowed. Tried to modify: @212.preventImaRefreshOfGpt", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093500.273:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093500.416:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
-ERROR: Couldn't read tbsCertificate as SEQUENCE
-ERROR: Failed parsing Certificate
-
-[0419/093500.434:INFO:CONSOLE(467)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can remove its sandboxing.", source: https://imasdk.googleapis.com/js/sdkloader/ima3.js (467)
-[0419/093500.445:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
-ERROR: Couldn't read tbsCertificate as SEQUENCE
-ERROR: Failed parsing Certificate
-
-[0419/093500.472:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093500.481:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can remove its sandboxing.", source: about:srcdoc (0)
-[0419/093500.608:INFO:CONSOLE(1)] "Attempting native browser m3u8 playback.", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093500.672:INFO:CONSOLE(1)] "Origin trial controlled feature not enabled: 'attribution-reporting'.", source: https://a.teads.tv/media/format/v3/teads-format.min.js (1)
-[0419/093500.718:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
-ERROR: Couldn't read tbsCertificate as SEQUENCE
-ERROR: Failed parsing Certificate
-
-[0419/093501.209:INFO:CONSOLE(1)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 8
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093501.209:INFO:CONSOLE(1)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 8
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093501.213:INFO:CONSOLE(1)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 8
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093501.214:INFO:CONSOLE(1)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ I Am Master: false", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115125.046:INFO:CONSOLE(1)] "%c STNVideo Embed [OJV] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  I am Not Master
+ ▪ Terminating", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115125.293:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115125.454:INFO:CONSOLE(1)] "[mobx] Observable '@212.impression' being read outside a reactive context.", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115125.469:INFO:CONSOLE(1)] "Hls.js is not supported in this browser.", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115125.477:INFO:CONSOLE(1)] "[MobX] Since strict-mode is enabled, changing (observed) observable values without using an action is not allowed. Tried to modify: @212.preventImaRefreshOfGpt", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115125.715:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115126.025:INFO:CONSOLE(1)] "Origin trial controlled feature not enabled: 'attribution-reporting'.", source: https://a.teads.tv/media/format/v3/teads-format.min.js (1)
+[0419/115126.162:INFO:CONSOLE(467)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can remove its sandboxing.", source: https://imasdk.googleapis.com/js/sdkloader/ima3.js (467)
+[0419/115126.202:INFO:CONSOLE(1)] "Attempting native browser m3u8 playback.", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115126.264:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can remove its sandboxing.", source: about:srcdoc (0)
+[0419/115126.700:INFO:CONSOLE(1)] "[object Object]", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115126.865:INFO:CONSOLE(1)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
  ▪ id: 1
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093501.214:INFO:CONSOLE(1)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ location: https://www.ratemyprofessors.com/professor/2185040", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115126.865:INFO:CONSOLE(1)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
  ▪ id: 3
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093501.215:INFO:CONSOLE(1)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ location: https://www.ratemyprofessors.com/professor/2185040", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115126.866:INFO:CONSOLE(1)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
  ▪ id: 2
- ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093501.215:INFO:CONSOLE(1)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 8
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093501.252:INFO:CONSOLE(1)] "%c STNVideo Embed [FMX] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 9
- ▪ location: https://www.ratemyprofessors.com/professor/2310558", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093501.282:INFO:CONSOLE(1)] "[object Object]", source: https://www.ratemyprofessors.com/static/js/main.881f50bc.js (1)
-[0419/093501.397:INFO:CONSOLE(0)] "Uncaught (in promise) NotSupportedError: Failed to load because no supported source was found.", source: https://www.ratemyprofessors.com/professor/2310558 (0)
-[0419/093503.284:INFO:CONSOLE(19)] "Uncaught (in promise) NotSupportedError: The element has no supported sources.", source: https://cdn.taboola.com/libtrc/impl.20230416-27_b4-PR-55247-DEV-131785-use-encoded-url-as-redirect-url-2b73fea8edf.js (19)
+ ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115127.107:INFO:CONSOLE(1)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 10
+ ▪ location: https://www.ratemyprofessors.com/professor/2185040", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115127.216:INFO:CONSOLE(1)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 12
+ ▪ location: https://www.ratemyprofessors.com/professor/2185040", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115127.216:INFO:CONSOLE(1)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 12
+ ▪ location: https://www.ratemyprofessors.com/professor/2185040", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115127.323:INFO:CONSOLE(1)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 12
+ ▪ location: https://www.ratemyprofessors.com/professor/2185040", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115127.354:INFO:CONSOLE(1)] "%c STNVideo Embed [BWO] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
+ ▪ id: 11
+ ▪ location: https://www.ratemyprofessors.com/professor/2185040", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0419/115127.710:INFO:CONSOLE(2)] "%cOMID - INFO color: #00f start()", source: https://cdn2.extremereach.io/omid-js/omid.js (2)
+[0419/115127.768:INFO:CONSOLE(2)] "%cOMID - INFO color: #00f onSessionEvent() [object Object]", source: https://cdn2.extremereach.io/omid-js/omid.js (2)
+[0419/115127.768:INFO:CONSOLE(2)] "%cOMID - INFO color: #00f AdParameters [object Object]", source: https://cdn2.extremereach.io/omid-js/omid.js (2)
+[0419/115128.134:INFO:CONSOLE(2)] "%cOMID - INFO color: #00f onSessionEvent() [object Object]", source: https://cdn2.extremereach.io/omid-js/omid.js (2)
+[0419/115128.136:INFO:CONSOLE(2)] "%cOMID - INFO color: #00f onSessionEvent() [object Object]", source: https://cdn2.extremereach.io/omid-js/omid.js (2)
+[0419/115128.136:INFO:CONSOLE(2)] "%cOMID - INFO color: #00f Stopping all timers", source: https://cdn2.extremereach.io/omid-js/omid.js (2)
