@@ -15,30 +15,50 @@ const db = new sqlite3.Database('./profURL.db', sqlite3.OPEN_READWRITE, (err)=> 
 
 let input = prompt("What is the professor's name?: ");
 let sql = '';
+let count = 0;
 
 console.log(input);
 if (input == 'all')
 {
     sql = 'SELECT * FROM Professor_Info';
-}
-else if (input == 'update')
-{
-    sql = 'UPDATE Professor_Info SET Overall_Rating = 0 WHERE Professor_name = "Kevin Andrea"';
+    db.all(sql, [], (err, rows) => {
+        if (err) return console.error(err.message);
+        rows.forEach((row) => {
+            console.log(row);
+            ++count;
+        });
+        console.log(count);
+    });
 }
 else
 {
     sql = "SELECT * FROM Professor_Info WHERE Professor_name = '" + input + "'";
+    db.all(sql, [], (err, rows) => {
+        if (err) return console.error(err.message);
+        rows.forEach((row) => {
+            console.log(row);
+            ++count;
+        });
+        console.log(count);
+    });
+    sql = "SELECT * FROM Professor_Courses WHERE Professor_name = '" + input + "'";
+    db.all(sql, [], (err, rows) => {
+        if (err) return console.error(err.message);
+        rows.forEach((row) => {
+            console.log(row);
+            ++count;
+        });
+        console.log(count);
+    });
+    sql = "SELECT * FROM Professor_Comment WHERE Professor_name = '" + input + "'";
+    db.all(sql, [], (err, rows) => {
+        if (err) return console.error(err.message);
+        rows.forEach((row) => {
+            console.log(row);
+            ++count;
+        });
+        console.log(count);
+    });
 }
 
 console.log(sql);
-
-let count = 0;
-
-db.all(sql, [], (err, rows) => {
-    if (err) return console.error(err.message);
-    rows.forEach((row) => {
-        console.log(row);
-        ++count;
-    });
-    console.log(count);
-});

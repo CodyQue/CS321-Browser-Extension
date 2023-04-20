@@ -16,6 +16,8 @@ const db = new sqlite3.Database('./profURL.db', sqlite3.OPEN_READWRITE, (err)=> 
 });
 
 db.run('CREATE TABLE Professor_Info(Professor_name, URL, Overall_Rating)');
+db.run('CREATE TABLE Professor_Courses(Professor_name, Course, Rating, Total_Rating)');
+db.run('CREATE TABLE Professor_Comment(Professor_name, Comment)');
 
 var count = 0;
 fs.readFile('profNames.txt', 'utf8', (err, data) => {

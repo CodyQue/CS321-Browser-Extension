@@ -1,18 +1,18 @@
 <!doctype html>
-<html>
+<html class = "h-full">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="../public/styles.css" rel="stylesheet">
 </head>
-<body class ="text-red-400 w-full h-full bg-no-repeat" style="background-image: url(./file3.png)">
-    <div class = "bg-contain flex justify-between py-5 px-1" id = "menu"> <!-- Different sections of the browser extension-->
+<body class ="text-red-400 w-full h-full bg-no-repeat bg-cover" style="background-image: url(./file2.png) ">
+    <div class = "bg-contain flex justify-between py-5 px-1 h-full" id = "menu" style="width: 500px; height: 300px;"> <!-- Different sections of the browser extension-->
         <div>
             <a href = "#">Settings</a>
             <a href = "#">About</a>
         </div>
-        <div>
+        <div class = "width: 0.5rem">
             <a href="menu.html">
                 <span>Schedule Planner</span>
             </a>
@@ -22,40 +22,12 @@
                 <span>Generate A New Schedule</span>
             </a>
         </div>
-        <div>
-            <a href="findProfessor.html">
-                <span>Find A Professor's Rating</span>
-            </a>
-        </div><!-- End navigation-->
   </div>
   <div id = "searchProfessor">
     <h1>Enter Professor's Name</h1>
     <input type="text" id="input"/>
     <button id="post">ENTER</button>
-    <script>
-        const input = document.getElementById("input");
-        const postButton = document.getElementById("post");
-
-        postButton.addEventListener('click', postInfo);
-        async function postInfo(e) 
-        {
-            e.preventDefault();
-            if (input.value == '') return;
-            
-            //Check /test to make sure that the input went through 
-            const res = await fetch('http://localhost:8000/users',
-            {
-                method: 'POST',
-                headers: {
-                    "Content-Type": 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify ({
-                    parcel: (input.value + " sendToProf")
-                })
-            })
-        }
-    </script>
+    <script src = 'background.js'></script>
   </div>
 </body>
 </html>

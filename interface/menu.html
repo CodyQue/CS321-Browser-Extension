@@ -1,32 +1,37 @@
 <!doctype html>
-<html>
+<html class = "h-full">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.jsdelivr.net/npm/">
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
+  <script src="calendar.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="../public/styles.css" rel="stylesheet">
 </head>
-<body class ="text-yellow-400 w-full h-full bg-no-repeat" style="background-image: url(./file2.png)"">
-  <div class = "bg-contain flex justify-between py-5 px-1"> <!-- Different sections of the browser extension-->
+<body class ="text-red-400 w-full h-full bg-no-repeat bg-cover" style="background-image: url(./file1.png)">
+  <div class = "bg-contain flex justify-between py-5 px-1 h-full" id = "menu" style="width: 500px; height: 300px;"> <!-- Different sections of the browser extension-->
     <div>
         <a href = "#">Settings</a>
         <a href = "#">About</a>
     </div>
-    <div>
+    <div class = "width: 0.5rem" style = "position:relative; left:40px; top:-7px">
         <a href="menu.html">
             <span>Schedule Planner</span>
         </a>
     </div> 
-    <div>
+    <div class = "width: 0.5rem" style = "position:relative; right:30px; top:-7px">
         <a href="randomSchedule.html">
-            <span>Generate A New Schedule</span>
+            <span>New Schedule</span>
         </a>
     </div>
-    <div>
-        <a href="findProfessor.html">
-            <span>Find A Professor's Rating</span>
-        </a>
-    </div><!-- End navigation-->
   </div>
+  <div id = "searchProfessor">
+    <h1>Enter Professor's Name</h1>
+    <input type="text" id="input"/>
+    <button id="post">ENTER</button>
+    <script src = 'background.js'></script>
+  </div>
+  <div id = "end of extension"></div>
 </body>
 </html>
