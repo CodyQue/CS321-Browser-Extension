@@ -1,13 +1,25 @@
 <!doctype html>
-<html>
+<html class = "h-full">
 <head>
   <meta charset="UTF-8">
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth'
+      });
+      calendar.render();
+    });
+
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="../public/styles.css" rel="stylesheet">
 </head>
-<body class ="text-yellow-400 w-full h-full bg-no-repeat" style="background-image: url(./file2.png)"">
-  <div class = "bg-contain flex justify-between py-5 px-1"> <!-- Different sections of the browser extension-->
+<body class ="text-yellow-400 w-full h-full bg-no-repeat bg-cover" style="background-image: url(./file2.png)"">
+  <div class = "bg-contain flex justify-between py-5 px-1 h-full"> <!-- Different sections of the browser extension-->
     <div>
         <a href = "#">Settings</a>
         <a href = "#">About</a>
@@ -28,5 +40,6 @@
         </a>
     </div><!-- End navigation-->
   </div>
+  <div id="calendar" class = "object-center place-content-center"></div>
 </body>
 </html>
