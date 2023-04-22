@@ -1,6 +1,15 @@
-2023/04/19-11:51:21.459 4034 Reusing MANIFEST C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\src\FindProfessor\tmp\Default\Session Storage/MANIFEST-000001
-2023/04/19-11:51:21.462 4034 Recovering log #6
-2023/04/19-11:51:21.465 4034 Reusing old log C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\src\FindProfessor\tmp\Default\Session Storage/000006.log 
-2023/04/19-11:51:27.487 4034 Level-0 table #10: started
-2023/04/19-11:51:27.492 4034 Level-0 table #10: 68502 bytes OK
-2023/04/19-11:51:27.493 4034 Delete type=0 #6
+2023/04/19-20:58:12.596 7988 Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\FindProfessor\tmp\Default\Session Storage/MANIFEST-000001
+2023/04/19-20:58:12.596 7988 Recovering log #51
+2023/04/19-20:58:12.596 7988 Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\src\FindProfessor\tmp\Default\Session Storage/000051.log 
+2023/04/19-20:58:18.328 686c Level-0 table #55: started
+2023/04/19-20:58:18.331 686c Level-0 table #55: 49940 bytes OK
+2023/04/19-20:58:18.331 686c Delete type=0 #51
+2023/04/19-20:58:18.332 686c Compacting 4@0 + 1@1 files
+2023/04/19-20:58:18.335 686c Generated table #56@0: 465 keys, 153806 bytes
+2023/04/19-20:58:18.335 686c Compacted 4@0 + 1@1 files => 153806 bytes
+2023/04/19-20:58:18.336 686c compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/04/19-20:58:18.336 686c Delete type=2 #43
+2023/04/19-20:58:18.336 686c Delete type=2 #46
+2023/04/19-20:58:18.336 686c Delete type=2 #49
+2023/04/19-20:58:18.336 686c Delete type=2 #52
+2023/04/19-20:58:18.336 686c Delete type=2 #55

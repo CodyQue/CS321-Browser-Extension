@@ -10,6 +10,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors = require('cors');
+const courseRandomizer= require("./src/CourseGenerator/findCourses");
 const PORT = 8000;
 
 var indexRouter = require('./routes/index');
@@ -33,9 +34,29 @@ app.use('/users', usersRouter);
 
 let parcel = '';
 let count = 0;
+let lock = 1;
 
 app.post('/users', (req, res) => {
   parcel = req.body.parcel;
+  console.log(parcel);
+  if (parcel.includes("generateSchedule"))
+  {
+    let arr = parcel.split('/');
+    arr.pop();
+    //console.log("Generating schedule");
+    courseRandomizer.generateSetup(arr);
+    (async () => {
+      while(courseRandomizer.schedule.length == 0)
+      {
+        console.log("NEW Waiting");
+        console.log(courseRandomizer.schedule);
+        await new Promise(resolve => setTimeout(resolve, 2000));
+      }
+      console.log("DONE")
+      parcel = courseRandomizer.schedule;
+    })();
+    //console.log("DOne");
+  }
   console.log(`Received parcel: ${parcel}`);
   res.send(parcel);
 });
@@ -63,5 +84,9 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+module.exports = {
+  lock:lock
+};
 
 app.listen(PORT, () => console.log("server running on PORT ${PORT}"))

@@ -6,27 +6,38 @@
   <title>Document</title>
   <link href="../public/styles.css" rel="stylesheet">
 </head>
+<<<<<<< HEAD
 <body class ="text-gray-700 w-full h-full bg-no-repeat bg-cover" style="background-image: url(./file1.png)">
     <div class = "bg-contain flex justify-between py-5 px-1 h-full"> <!-- Different sections of the browser extension-->
+=======
+<body class ="text-gray-700 w-full h-full bg-no-repeat bg-cover" style="background-image: url(./file2.png)">
+    <div class = "bg-contain flex justify-between py-5 px-1 h-full" id = "menu" style="width: 500px; height: 300px;"> <!-- Different sections of the browser extension-->
+>>>>>>> c8cd1891c3cebc7e607521ada4500edfa977aedb
         <div>
             <a href = "#">Settings</a>
             <a href = "#">About</a>
         </div>
-        <div>
+        <div class = "width: 0.5rem" style = "position:relative; left:40px; top:-7px">
             <a href="menu.html">
                 <span>Schedule Planner</span>
             </a>
         </div> 
-        <div>
+        <div class = "width: 0.5rem" style = "position:relative; right:30px; top:-7px">
             <a href="randomSchedule.html">
-                <span>Generate A New Schedule</span>
+                <span>New Schedule</span>
             </a>
         </div>
-        <div>
-            <a href="findProfessor.html">
-                <span>Find A Professor's Rating</span>
-            </a>
-        </div><!-- End navigation-->
   </div>
+  <div id = "Make Schedule" style = "position:relative; left:30px; top:-220px">
+    <h1>Generate A Schedule For Your Next Semester!</h1>
+    <h1>1:   <input type="text" id="input1"/></h1>
+    <h1 style = "position:relative; top:10px">2:   <input type="text" id="input2"/></h1>
+    <h1 style = "position:relative; top:20px">3:   <input type="text" id="input3"/></h1>
+    <h1 style = "position:relative; top:30px">4:   <input type="text" id="input4"/></h1>
+    <h1 style = "position:relative; top:40px">5:   <input type="text" id="input5"/></h1>
+    <button id="post" style = "position:relative; top:50px">ENTER</button>
+    <script src = 'background.js'></script>
+  </div>
+  <div id = "end of extension"></div>
 </body>
 </html>
