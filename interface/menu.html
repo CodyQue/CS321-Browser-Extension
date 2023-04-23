@@ -2,35 +2,15 @@
 <html class = "h-full">
 <head>
   <meta charset="UTF-8">
-<<<<<<< HEAD
-  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
-  <script>
-
-    document.addEventListener('DOMContentLoaded', function() {
-      var calendarEl = document.getElementById('calendar');
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth'
-      });
-      calendar.render();
-    });
-
-  </script>
-=======
   <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.jsdelivr.net/npm/">
   <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
   <script src="calendar.js"></script>
->>>>>>> c8cd1891c3cebc7e607521ada4500edfa977aedb
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="../public/styles.css" rel="stylesheet">
 </head>
-<<<<<<< HEAD
-<body class ="text-yellow-400 w-full h-full bg-no-repeat bg-cover" style="background-image: url(./file2.png)"">
-  <div class = "bg-contain flex justify-between py-5 px-1 h-full"> <!-- Different sections of the browser extension-->
-=======
 <body class ="text-red-400 w-full h-full bg-no-repeat bg-cover" style="background-image: url(./file1.png)">
   <div class = "bg-contain flex justify-between py-5 px-1 h-full" id = "menu" style="width: 500px; height: 300px;"> <!-- Different sections of the browser extension-->
->>>>>>> c8cd1891c3cebc7e607521ada4500edfa977aedb
     <div>
         <a href = "#">Settings</a>
         <a href = "#">About</a>
@@ -46,11 +26,6 @@
         </a>
     </div>
   </div>
-<<<<<<< HEAD
-  <div class="bg-contain flex justify-between py-5 px-1 h-full">
-    <div id='calendar'></div>
-  </div>
-=======
   <div id = "searchProfessor">
     <h1>Enter Professor's Name</h1>
     <input type="text" id="input"/>
@@ -58,6 +33,5 @@
     <script src = 'background.js'></script>
   </div>
   <div id = "end of extension"></div>
->>>>>>> c8cd1891c3cebc7e607521ada4500edfa977aedb
 </body>
 </html>
