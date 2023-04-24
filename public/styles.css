@@ -231,6 +231,8 @@ button,
   background-color: beige;
   /* 2 */
   background-image: none;
+  border-radius: 5px;
+  border-color: cadetblue;
   /* 2 */
 }
 
