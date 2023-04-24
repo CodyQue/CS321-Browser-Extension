@@ -233,6 +233,7 @@ button,
   background-image: none;
   border-radius: 5px;
   border-color: cadetblue;
+  border-width: 5px;
   /* 2 */
 }
 
