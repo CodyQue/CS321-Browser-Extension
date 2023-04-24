@@ -1,0 +1,24 @@
+[0423/225509.760:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+
+[0423/225510.091:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225510.244:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225510.372:INFO:CONSOLE(1)] "1682304910372 : [OpenWrap] : [Error] GPT-Slot not found for divId: ad_rec_01", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225512.777:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225512.884:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225515.455:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225515.526:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225515.652:WARNING:spdy_session.cc(3484)] Received HEADERS for invalid stream 5
+[0423/225536.209:INFO:CONSOLE(3)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://static.hotjar.com/c/hotjar-1667000.js?sv=7 (3)
+[0423/225536.670:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225539.089:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225539.225:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225542.023:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225542.087:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225546.535:INFO:CONSOLE(1)] "https://www.ratemyprofessors.com/search/teachers?query=John%20Otten", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225546.554:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225546.576:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)
+[0423/225546.680:WARNING:spdy_session.cc(3484)] Received HEADERS for invalid stream 13
+[0423/225613.284:INFO:CONSOLE(3)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://static.hotjar.com/c/hotjar-1667000.js?sv=7 (3)
+[0423/225613.739:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.df0e3a53.js (1)

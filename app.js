@@ -52,8 +52,9 @@ app.post('/users', (req, res) => {
         console.log(courseRandomizer.schedule);
         await new Promise(resolve => setTimeout(resolve, 2000));
       }
-      console.log("DONE")
       parcel = courseRandomizer.schedule;
+      //res.redirect('/interface/result.html');
+      console.log("DONE")
     })();
     //console.log("DOne");
   }

@@ -1,9 +1,11 @@
 const puppeteer = require("puppeteer");
 const server = require("../../app");
+const sqlite3 = require("sqlite3").verbose();
 
 let listOfCourses = new Map();
 let schedule = [];
 let scheduleCount = 0;
+let days = "";
 
 /*listOfCourses.set('CS 483', [
     [ '3:00 pm - 4:15 pm', 'TR', 'Grigory Yaroslavtsev' ],
@@ -27,7 +29,8 @@ listOfCourses.set('CS 306', [
   listOfCourses.set('CS 468', [[ '9:00 am - 10:15 am', 'TR', 'Maha Shamseddine' ],
   [ '3:00 pm - 4:15 pm', 'TR', 'Maha Shamseddine' ]])*/
 
-let lock = 1, lock2 = 1; //Locking variable
+let lock = 1, lock2 = 1, profRatinglock = 0; //Locking variable
+let nextLock = 1;
 
 /**
  * 
@@ -57,82 +60,60 @@ async function generateSchedule(arr)
         console.log("Waiting");
         await new Promise(resolve => setTimeout(resolve, 2000));
     }
-    //console.log(listOfCourses);
+    console.log(listOfCourses);
     lock = 1;
     for(let i = 0; i < arr.length; ++i) //Loops through every single course
     {
+        let highestRatingProf = 0;
+        let highestProfInfo = [];
         //console.log("GOING THROUGH LOOP")
         let timeIn = '', timeOut = '';
-        let temp = listOfCourses.get(arr[i]); //Gets all section from course
+        let temp = listOfCourses.get(arr[i]); //Gets all section from course from the Map
         //console.log("Length: " + temp.length);
 
-        for(let j = 0; j < temp.length; ++j) //Loops through every single time for that course
+        for(let j = 0; j < temp.length; ++j) //Loops through every section of the course
         {
-            //console.log("CONTINUE");
-            //const findProfInDatabase = require('../FindProfessor/comments');
-            let temp2 = temp[j][0].split(" ");
-            //console.log(temp2);
-            timeIn = temp2[0];
-            timeOut = temp2[3];
-            //console.log("Time In: " + timeIn + ", Time Out: " + timeOut);
-            //console.log(temp[j][2]);
-            if (scheduleCount == 0)
+            if (days.includes(temp[j][1]))
             {
-                let newArr = []
-                newArr.push(arr[i], timeIn, timeOut, temp[j][1], temp[j][2]);
-                schedule.push(newArr);
-                //console.log(schedule);
-                ++scheduleCount;
-                break;
-            }
-            else
-            {
+                //console.log("CONTINUE");
+                //const findProfInDatabase = require('../FindProfessor/comments');
+                let temp2 = temp[j][0].split(" "); //Splits the times
+                //console.log(temp2);
+                timeIn = temp2[0];
+                timeOut = temp2[3];
+                //console.log("Time In: " + timeIn + ", Time Out: " + timeOut);
+                //console.log(temp[j][2]);
                 let d = false;
-                for(let k = 0; k < schedule.length; ++k) //Checks the courses in the schedule
+                for(let k = 0; k < schedule.length; ++k) //Checks the courses in the schedule to find 
                 {
                     //console.log("What is this?: " + temp[j][1]);
-                    if (temp[j][1].localeCompare(schedule[k][3]) == 0)
+                    if (temp[j][1].localeCompare(schedule[k][3]) == 0) //Same day
                     {
-                        if (timeIn.localeCompare(schedule[k][1]) == 0 || timeOut.localeCompare(schedule[k][2]) == 0)
+                        if (timeIn.localeCompare(schedule[k][1]) == 0 || timeOut.localeCompare(schedule[k][2]) == 0) //Same time in or out
                         {
-                            //console.log("SAME TIME AND DAY: " + schedule[k][1] + " " + schedule[k][2])
+                        //console.log("SAME TIME AND DAY: " + schedule[k][1] + " " + schedule[k][2])
                             d = true;
                         }
                     }
                 }
+                //console.log(temp[j][3]);
                 if (d == false)
                 {
-                    let newArr = []
-                    newArr.push(arr[i], timeIn, timeOut, temp[j][1], temp[j][2]);
-                    schedule.push(newArr);
-                    //console.log(schedule);
-                    ++scheduleCount;
-                    break;
+                    if (temp[j][3] >= highestRatingProf)
+                    {
+                        highestProfInfo = [];
+                        highestProfInfo.push(arr[i], timeIn, timeOut, temp[j][1], temp[j][2]);
+                        highestRatingProf = temp[j][3];
+                    }
                 }
+                ++scheduleCount;
+                //console.log(temp);
             }
-            /*while (lock2 == 1)
-            {
-                await new Promise(resolve => setTimeout(resolve, 2000));
-            }
-            lock2 = 0;
-            let newName = temp[j][2].split(" ");
-            if (newName.length == 2)
-            {
-                findProfInDatabase(temp[j][2], '../FindProfessor/profURL.db');
-            }
-            else{
-                let n = newName[0] + " " + newName[2];
-                findProfInDatabase(n, '../FindProfessor/profURL.db');
-            }
-            /*if (scheduleCount == 0)
-            {
-                schedule.push([arr[0], timeIn, timeOut]);
-            }*/
-            ++scheduleCount;
-            //console.log(temp);
         }
+        schedule.push(highestProfInfo);
     }
     console.log(schedule);
+    console.log("Days: " + days);
     lock2 = 0;
 }
 
@@ -156,7 +137,7 @@ async function scrapeSchedules(arr)
             let course = arr[i].split(" ");
             let section = [];
             allSections = [];
-            console.log(course);
+            console.log("COurses: " + course + ", Days: " + days);
             await page.goto('https://patriotweb.gmu.edu/pls/prod/bwckschd.p_disp_dyn_sched');
             await page.select('select[name="p_term"]', '202370');
             await page.click('input[type="submit"]'); // click the submit button
@@ -171,7 +152,7 @@ async function scrapeSchedules(arr)
             const html = await page.content();
             let newArr = html.split("\n"); //This is used to find the different sections of each course
             //console.log(newArr);
-            for(let j = 0; j < newArr.length; ++j)
+            for(let j = 0; j < newArr.length; ++j) //Loops through each section
             {
                 //console.log("Comparing " + newArr[i] + " with " + '<td class="dddefault">Class</td>');
                 if (newArr[j].localeCompare('<td class="dddefault">Class</td>') == 0)
@@ -180,6 +161,7 @@ async function scrapeSchedules(arr)
                     let courseProf = "";
                     let courseTime = "";
                     let courseDays = "";
+                    let profRating = 0;
                     let count = 0;
                     let determine = false;
                     for(let k = 0; k < newArr[j+1].length; ++k) //scrapes the time of that course
@@ -207,7 +189,7 @@ async function scrapeSchedules(arr)
                     }
                     determine = false;
                     count = 0;
-                    for(let k = 0; k < newArr[j+2].length; ++k)
+                    for(let k = 0; k < newArr[j+2].length; ++k) //Scrapes the days that the specific course meets
                     {
                         //console.log("Finding days")
                         courseDays += newArr[j+2][k];
@@ -238,7 +220,7 @@ async function scrapeSchedules(arr)
                     {
                         courseProf += newArr[j+6][k];
                         //console.log(courseProf + ", " + k);
-                        if (courseProf == '<td class="dddefault">' && determine == false)
+                        if (courseProf == '<td class="dddefault">' && determine == false) //Resets the courseProf
                         {
                             courseProf = "";
                             determine = true;
@@ -255,7 +237,67 @@ async function scrapeSchedules(arr)
                                 courseProf = courseProf.substring(0, courseProf.length-2);
                                 courseProf = courseProf.replace("   ", " ");
                                 courseProf = courseProf.replace("  ", " ");
-                                //console.log(courseProf);
+                                let URL = "";
+                                const db = new sqlite3.Database('./src/FindProfessor/profURL.db', sqlite3.OPEN_READWRITE, (err)=> {
+                                    if (err) return console.error(err.message);
+                                    //console.log("Connected to database");
+                                });
+                                let tempName = courseProf.split(' ');
+                                if (tempName.length == 3)
+                                {
+                                    courseProf = tempName[0] + " " + tempName[2];
+                                }
+                                const sql = 'SELECT Professor_name, URL FROM Professor_Info WHERE Professor_name = "' + courseProf + '"';
+                                db.all(sql, [], (err, rows) => {
+                                    if (err) return console.error(err.message);
+                                    try
+                                    {
+                                        URL = rows[0].URL;
+                                    }
+                                    catch(error)
+                                    {
+                                        console.log("Cannot find professor");
+                                    }
+                                    profRatinglock = 1;
+                                });
+                                while (profRatinglock != 1)
+                                {
+                                    await new Promise(resolve => setTimeout(resolve, 2000));
+                                }
+                                profRatinglock = 0;
+                                console.log("Professor: " + courseProf + ", URL: " + URL);
+                                try{
+                                    await page.goto(URL); //Goes to URL
+                                    try //Rate My Professor has a "cookies" page when new user goes to the website. This clicks the "close" button if this shows up
+                                    {
+                                        const closeButton = await page.$('.Buttons__Button-sc-19xdot-1.CCPAModal__StyledCloseButton-sc-10x9kq-2.gvGrz');
+                                        await closeButton.click();
+                                    }
+                                    catch(error2)
+                                    {
+                                        console.log("No button exists");
+                                    }
+                                    const t = await page.evaluate(() => document.body.innerText); //Evaluates the inner text of the page
+                                    var x = t.split("\n");
+                                    //console.log(x);
+                                    var n = courseProf.split(" ");
+                                    //console.log(n);
+                                    for(let i = 0; i < x.length; ++i) //Finds the number of professors in the search
+                                    {
+                                        if (x[i].includes(courseProf[0]) == true && x[i].includes(courseProf[n.length-1]) == true) //Finds same first and last name
+                                        {
+                                            if (x[i+2].includes("George Mason University")) //Finds the rating of professor that is in GMU
+                                            {
+                                                profRating = parseFloat(x[i-2]);
+                                                break;
+                                            }
+                                        }
+                                    }
+                                }
+                                catch(error)
+                                {
+                                    console.log("Could not find professor");
+                                }
                                 break;
                             }
                         }
@@ -263,6 +305,7 @@ async function scrapeSchedules(arr)
                     section.push(courseTime);
                     section.push(courseDays);
                     section.push(courseProf);
+                    section.push(profRating);
                     //console.log(section);
                     allSections.push(section);
                     //console.log("Time: " + courseTime + ", Professor: " + courseProf);
@@ -282,7 +325,9 @@ async function scrapeSchedules(arr)
 let randArr = [], lst = [];
 function generateSetup(arr)
 {
-    for(let i = 0; i < arr.length; ++i)
+    days = arr[arr.length-1];
+    arr.pop();
+    /*for(let i = 0; i < arr.length-1; ++i)
     {
         let t = 0;
         while(t < 100)
@@ -321,11 +366,12 @@ function generateSetup(arr)
             }
             ++j;
         }
-    }
-    //console.log(randArr);
+    }*/
+    //console.log(arr);
+    //console.log(days);
     scrapeSchedules(arr);
     //waitForSchedule();
-    generateSchedule(randArr);
+    generateSchedule(arr);
 }
 
 module.exports = {

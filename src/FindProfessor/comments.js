@@ -197,7 +197,8 @@ function findProfAndRating(name, URL)
                         //console.log("Connected to database");
                     });
                     //console.log("Prof is at: " + profCount + ", Overall Rating: " + overallRating);
-                    const sql = "UPDATE Professor_Info SET Overall_Rating = " + overallRating + " WHERE Professor_name = '" + name + "'";
+                    const sql = "UPDATE Professor_Info SET Overall_Rating = " + overallRating + " WHERE Professor_name = '" + name + "'"; //Sets Professor Overall Rating
+                    console.log(sql);
                     db.all(sql, [], (err, rows) => {
                         if (err) return console.error(err.message);
                     });
@@ -266,7 +267,7 @@ function findProfInDatabase(name, dbURL)
             profName = rows[0].Professor_name;
             URL = rows[0].URL;
             //console.log("Prof Name: " + profName + ", URL: " + URL);
-            findProfAndRating(name, URL, db);
+            findProfAndRating(name, URL);
         }
         catch(error)
         {
@@ -275,12 +276,12 @@ function findProfInDatabase(name, dbURL)
     });
     db.close();
 }
-/*function askUser()
+function askUser()
 {
-    profName = prompt("What is the professor's name?: ");
-    console.log(`Finding ${profName}`);
-    findProfInDatabase(profName);
-    /*fs.readFile('profNames.txt', 'utf8', (err, data) => 
+    //profName = prompt("What is the professor's name?: ");
+    //console.log(`Finding ${profName}`);
+    //findProfInDatabase(profName, "profURL.db");
+    fs.readFile('profNames.txt', 'utf8', (err, data) => 
     {
         if (err) 
         {
@@ -288,15 +289,29 @@ function findProfInDatabase(name, dbURL)
             return;
         }
         let temp = data.split('\n');
-        for(let i = 0; i < temp.length; ++i)
+        for(let i = 45; i < 50; ++i)
         {
-            name = temp2[0] + " " + temp2[1];
-            findProfInDatabase(name);
+            let temp2 = temp[i].split(' ');
+            //console.log(temp2);
+            if (temp2[2].includes("https://www.ratemyprofessors.com/search/teachers?query=")) //Professors with 2 names (first and last name)
+            {
+                let name = temp2[0] + " " + temp2[1];
+                let URL = temp2[2];
+                findProfAndRating(name, URL);
+                console.log("Adding: " + name + " , Count: " + i+1);
+            }
+            else //This is for professors with 3 names (first, middle, and last name)
+            {
+                let name = temp2[0] + " " + temp2[2];
+                let URL = temp2[3];
+                findProfAndRating(name, URL);
+                console.log("Adding: " + name + " , Count: " + i+1);
+            }
         }
     })
 }
 
-askUser();*/
+askUser();
 
 module.exports = findProfInDatabase;
 

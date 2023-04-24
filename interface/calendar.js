@@ -1,7 +1,9 @@
+import { Calendar } from 'fullcalendar'
+
 document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth'
-    });
-    calendar.render();
-  });
+  const calendarEl = document.getElementById('calendar')
+  const calendar = new Calendar(calendarEl, {
+    initialView: 'dayGridMonth'
+  })
+  calendar.render()
+})

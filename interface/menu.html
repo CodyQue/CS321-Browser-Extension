@@ -2,9 +2,16 @@
 <html class = "h-full">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.jsdelivr.net/npm/">
-  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
-  <script src="calendar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth'
+      });
+      calendar.render();
+    });
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="../public/styles.css" rel="stylesheet">
@@ -17,7 +24,7 @@
     </div>
     <div class = "width: 0.5rem" style = "position:relative; left:40px; top:-7px">
         <a href="menu.html">
-            <span>Schedule Planner</span>
+            <span>Schedule</span>
         </a>
     </div> 
     <div class = "width: 0.5rem" style = "position:relative; right:30px; top:-7px">
@@ -26,12 +33,7 @@
         </a>
     </div>
   </div>
-  <div id = "searchProfessor">
-    <h1>Enter Professor's Name</h1>
-    <input type="text" id="input"/>
-    <button id="post">ENTER</button>
-    <script src = 'background.js'></script>
-  </div>
+  <div id="calendar" style="width: 500px; height: 100px; position:relative; left:200px; top:-7p"></div>
   <div id = "end of extension"></div>
 </body>
 </html>

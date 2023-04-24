@@ -39,9 +39,9 @@ else
             console.log(row);
             ++count;
         });
-        console.log(count);
+        //console.log(count);
     });
-    sql = "SELECT * FROM Professor_Courses WHERE Professor_name = '" + input + "'";
+   /* sql = "SELECT * FROM Professor_Courses WHERE Professor_name = '" + input + "'";
     db.all(sql, [], (err, rows) => {
         if (err) return console.error(err.message);
         rows.forEach((row) => {
@@ -58,7 +58,7 @@ else
             ++count;
         });
         console.log(count);
-    });
+    });*/
 }
 
 console.log(sql);
