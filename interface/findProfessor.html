@@ -7,7 +7,7 @@
   <link href="../public/styles.css" rel="stylesheet">
 </head>
 <body class ="text-red-400 w-full h-full bg-no-repeat bg-cover" style="background-image: url(./file2.png) ">
-    <div class = "bg-contain flex justify-between py-5 px-1 h-full" id = "menu" style="width: 500px; height: 300px;"> <!-- Different sections of the browser extension-->
+    <div class = "bg-contain flex justify-between py-5 px-1 h-full" id = "menu" style=" position: relative; width: 500px; height: 300px; "> <!-- Different sections of the browser extension-->
         <div>
             <a href = "#">Settings</a>
             <a href = "#">About</a>
@@ -23,7 +23,7 @@
             </a>
         </div>
   </div>
-  <div id = "searchProfessor" style = "position:relative; left:30px; top:-220px">
+  <div id = "searchProfessor" class= "center" style = "position:relative; left:300px; top:-50px">
     <h1>Enter Professor's Name</h1>
     <input type="text" id="input"/>
     <button id="post">ENTER</button>
