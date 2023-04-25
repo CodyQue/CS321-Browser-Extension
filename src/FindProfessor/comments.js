@@ -172,7 +172,6 @@ function findProfAndRating(name, URL)
             const closeButton = await page.$('.Buttons__Button-sc-19xdot-1.CCPAModal__StyledCloseButton-sc-10x9kq-2.gvGrz');
             await closeButton.click();
         }
-
         catch(error)
         {
             console.log("No button exists");

@@ -2,16 +2,6 @@
 <html class = "h-full">
 <head>
   <meta charset="UTF-8">
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var calendarEl = document.getElementById('calendar');
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth'
-      });
-      calendar.render();
-    });
-  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="../public/styles.css" rel="stylesheet">
@@ -35,7 +25,30 @@
       </a>
   </div>
   </div>
-  <div id="calendar" style="width: 500px; height: 100px; position:relative; left:200px; top:-7p"></div>
-  <div id = "end of extension"></div>
+  <div id = "Menu" style = "position:relative; bottom:225px; left:65px;">
+    <h1 style = "bottom:10px; position:relative; left:150px">Schedule!</h1>
+    <div id="Schedule">
+      <table>
+        <tr>
+          <th>Class</th>
+          <th>Start</th>
+          <th>End</th>
+          <th>Professor</th>
+        </tr>
+        <tr>
+          <td>Row 1, Column 1</td>
+          <td>Row 1, Column 2</td>
+          <td>Row 1, Column 3</td>
+          <td>Row 1, Column 4</td>
+        </tr>
+        <tr>
+          <td>Row 2, Column 1</td>
+          <td>Row 2, Column 2</td>
+          <td>Row 2, Column 3</td>
+          <td>Row 2, Column 4</td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </body>
 </html>
