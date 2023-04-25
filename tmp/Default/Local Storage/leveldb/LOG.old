@@ -1,3 +1,5 @@
-2023/04/25-10:56:36.805 20ac Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Local Storage\leveldb/MANIFEST-000001
-2023/04/25-10:56:36.806 20ac Recovering log #14
-2023/04/25-10:56:36.806 20ac Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Local Storage\leveldb/000014.log 
+2023/04/25-14:37:52.133 4ecc Reusing MANIFEST C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Local Storage\leveldb/MANIFEST-000001
+2023/04/25-14:37:52.134 4ecc Recovering log #3
+2023/04/25-14:37:52.135 4ecc Level-0 table #3: started
+2023/04/25-14:37:52.138 4ecc Level-0 table #3: 9750 bytes OK
+2023/04/25-14:37:52.140 4ecc Delete type=0 #3

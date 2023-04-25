@@ -6,17 +6,12 @@
  */
 
 const prompt = require('prompt-sync')();
-const sqlite3 = require("sqlite3").verbose();
 const puppeteer = require("puppeteer");
-const express = require("express");
 const fs = require('fs');
 
-const app = express();
-const PORT = 8000;
-
-let profName = "";
-let URL = "";
 let overallRating = 0;
+let profInfoArr = [];
+let arrLock = 1;
 
 /**
  * Organizes all the comments into a 2D array
@@ -30,7 +25,8 @@ function organizeComments(arr)
     let max = arr.length;
     let i = 0;
     let added = 0, found = 0;
-    while (i < max)
+    let count = 0;
+    while (i < max && count < 2)
     {
         let foundComment = false;
         const newArr2 = [];
@@ -62,11 +58,15 @@ function organizeComments(arr)
                 newArr2.push(arr[i + 4]); //adds the course
                 newArr2.push(arr[i + 7]); //adds the data
                 newArr.push(newArr2); //adds it to main array
+                profInfoArr.push(newArr2);
+                ++count;
             }
         }
         foundComment = false;
         ++i;
     }
+    arrLock = 0;
+    console.log(newArr);
     return newArr;
 }
 
@@ -87,65 +87,12 @@ function putInMap(arr)
         newArr.push(arr[i][3]); //Adds the date
         if (newMap.has(arr[i][2]) == false) //Adds a new course to the map
         {
-            /*const db = new sqlite3.Database('./profURL.db', sqlite3.OPEN_READWRITE, (err)=> {
-                if (err) return console.error(err.message);
-                //console.log("Connected to database");
-            });
-            let courseSQL = "";
-            for(let j = 0; j < arr[i][2].length; ++j)
-            {
-                courseSQL += arr[i][2][j];
-                if (j == arr[i][2].length-4)
-                {
-                    courseSQL += " ";
-                }
-            }
-            let sql = "INSERT INTO Professor_Courses(Professor_name, Course, Rating, Total_Rating) Values(?,?,?,?)"; //Adds the new course with professor to the database
-            db.run(sql, [profName,courseSQL,parseFloat(arr[i][1]),1],(err)=>{
-                if (err) return console.error(err.message);
-            });*/
             const newArr2 = [];
             newArr2.push(newArr);
             newMap.set(arr[i][2], newArr2);
         }
         else
         {
-            /*let a = "",b = "";
-            let courseSQL = "";
-            const db = new sqlite3.Database('./profURL.db', sqlite3.OPEN_READWRITE, (err)=> {
-                if (err) return console.error(err.message);
-                //console.log("Connected to database");
-            });
-            for(let j = 0; j < arr[i][2].length; ++j)
-            {
-                courseSQL += arr[i][2][j];
-                if (j == arr[i][2].length-4)
-                {
-                    courseSQL += " ";
-                }
-            }
-            //let c = 0, d = 0;
-            let sql = "SELECT Rating, Total_Rating FROM Professor_Courses WHERE Professor_name = '" + profName + "' and Course = '" + courseSQL + "'";
-            db.all(sql, [], (err, rows) => {
-                if (err) return console.error(err.message);
-                console.log(rows);
-                a = rows[3].Rating; //Gets the rating from the database
-                b = rows[3].Total_Rating; //Gets the rating count from the database
-                //console.log("NEW rating: " + arr[i][1])
-                a+=parseFloat(arr[i][1]);
-                console.log("NEW rating: " + a)
-                ++b;
-                console.log("NEW TOTAL rating: " + b)
-                console.log("Rating: " + a + ", Total Rating: " + b);
-            });
-            sql = "UPDATE Professor_Courses SET Rating = " + a + " WHERE Professor_name = '" + profName + "' and Course = '" + courseSQL + "'";
-            db.all(sql, [], (err, rows) => {
-                if (err) return console.error(err.message);
-            });
-            sql = "UPDATE Professor_Courses SET Total_Rating = " + b + " WHERE Professor_name = '" + profName + "' and Course = '" + courseSQL + "'";
-            db.all(sql, [], (err, rows) => {
-                if (err) return console.error(err.message);
-            });*/
             let newArr2 = newMap.get(arr[i][2]); //Gets from the map
             newArr2.push(newArr); //Pushes a new comment array
             newMap.set(arr[i][2], newArr2); //Puts it back in the map
@@ -191,16 +138,6 @@ function findProfAndRating(name, URL)
                 if (x[i+2].includes("George Mason University")) //Finds the rating of professor that is in GMU
                 {
                     overallRating = parseFloat(x[i-2]);
-                    const db = new sqlite3.Database('./profURL.db', sqlite3.OPEN_READWRITE, (err)=> {
-                        if (err) return console.error(err.message);
-                        //console.log("Connected to database");
-                    });
-                    //console.log("Prof is at: " + profCount + ", Overall Rating: " + overallRating);
-                    const sql = "UPDATE Professor_Info SET Overall_Rating = " + overallRating + " WHERE Professor_name = '" + name + "'"; //Sets Professor Overall Rating
-                    console.log(sql);
-                    db.all(sql, [], (err, rows) => {
-                        if (err) return console.error(err.message);
-                    });
                     break;
                 }
             }
@@ -232,9 +169,11 @@ function findProfAndRating(name, URL)
                     const comments = await page.evaluate(() => document.body.innerText);
                     //console.log(comments);
                     var arr = comments.split("\n");
+                    profInfoArr.push(overallRating);
                     arr = organizeComments(arr);
-                    putInMap(arr);
-                    console.log("Overall Rating: " + overallRating);
+                    //putInMap(arr);
+                   
+                    console.log(profInfoArr);
                     break;
                 }
             }
@@ -244,37 +183,6 @@ function findProfAndRating(name, URL)
     })();
 }
 
-/**
- * 
- * Finds professor in database.
- * @param {*} name 
- */
-function findProfInDatabase(name, dbURL)
-{
-    /**
-     * Opens the database. Returns an error if database does not exist.
-     */
-    const db = new sqlite3.Database(dbURL, sqlite3.OPEN_READWRITE, (err)=> {
-        if (err) return console.error(err.message);
-        //console.log("Connected to database");
-    });
-    const sql = 'SELECT Professor_name, URL FROM Professor_Info WHERE Professor_name = "' + name + '"';
-    db.all(sql, [], (err, rows) => {
-        if (err) return console.error(err.message);
-        try
-        {
-            profName = rows[0].Professor_name;
-            URL = rows[0].URL;
-            //console.log("Prof Name: " + profName + ", URL: " + URL);
-            findProfAndRating(name, URL);
-        }
-        catch(error)
-        {
-            console.log("Cannot find professor");
-        }
-    });
-    db.close();
-}
 function askUser()
 {
     //profName = prompt("What is the professor's name?: ");
@@ -310,9 +218,21 @@ function askUser()
     })
 }
 
-askUser();
+function startFindingProfessor(name)
+{
+    let URL = "https://www.ratemyprofessors.com/search/teachers?query=";
+    let temp = name.split(' ');
+    URL += temp[0] + "%20" + temp[1];
+    console.log(URL);
+    findProfAndRating(name, URL);
+}
 
-module.exports = findProfInDatabase;
+//askUser();
+
+
+module.exports = {
+    startFindingProfessor: startFindingProfessor,
+    profInfoArr: profInfoArr};
 
 //app.use.express.static('../../interface');
 

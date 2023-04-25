@@ -2,12 +2,10 @@ const puppeteer = require("puppeteer");
 const server = require("../../app");
 const sqlite3 = require("sqlite3").verbose();
 
-
 let listOfCourses = new Map();
 let schedule = [];
 let scheduleCount = 0;
 let days = "";
-
 
 /*listOfCourses.set('CS 483', [
     [ '3:00 pm - 4:15 pm', 'TR', 'Grigory Yaroslavtsev' ],
@@ -16,9 +14,7 @@ let days = "";
     [ '12:30 pm - 1:20 pm', 'MWF', 'No Professor yet' ]
   ]);
 
-
 listOfCourses.set('CS 452', [ [ '12:00 pm - 1:15 pm', 'TR', 'Lap Fai Yu' ] ]);
-
 
 listOfCourses.set('CS 306', [
     [ '9:00 am - 10:15 am', 'TR', 'Tamara A Maddox' ],
@@ -30,19 +26,16 @@ listOfCourses.set('CS 306', [
     [ '3:00 pm - 4:15 pm', 'MW', 'No Professor yet' ]
   ])
 
-
   listOfCourses.set('CS 468', [[ '9:00 am - 10:15 am', 'TR', 'Maha Shamseddine' ],
   [ '3:00 pm - 4:15 pm', 'TR', 'Maha Shamseddine' ]])*/
-
 
 let lock = 1, lock2 = 1, profRatinglock = 0; //Locking variable
 let nextLock = 1;
 
-
 /**
- *
+ * 
  * Prints the contents of the list of courses.
- *
+ * 
  */
 async function waitForSchedule()
 {
@@ -55,11 +48,10 @@ async function waitForSchedule()
     lock = 1;
 }
 
-
 /**
- *
+ * 
  * Using the map "listOfCourses", this will generate a schedule for the user.
- *
+ * 
  */
 async function generateSchedule(arr)
 {
@@ -79,7 +71,6 @@ async function generateSchedule(arr)
         let temp = listOfCourses.get(arr[i]); //Gets all section from course from the Map
         //console.log("Length: " + temp.length);
 
-
         for(let j = 0; j < temp.length; ++j) //Loops through every section of the course
         {
             if (days.includes(temp[j][1]))
@@ -93,7 +84,7 @@ async function generateSchedule(arr)
                 //console.log("Time In: " + timeIn + ", Time Out: " + timeOut);
                 //console.log(temp[j][2]);
                 let d = false;
-                for(let k = 0; k < schedule.length; ++k) //Checks the courses in the schedule to find
+                for(let k = 0; k < schedule.length; ++k) //Checks the courses in the schedule to find 
                 {
                     //console.log("What is this?: " + temp[j][1]);
                     if (temp[j][1].localeCompare(schedule[k][3]) == 0) //Same day
@@ -126,14 +117,13 @@ async function generateSchedule(arr)
     lock2 = 0;
 }
 
-
 /**
- *
+ * 
  * This finds the list of courses provided by the user. The program scrapes PatriotWeb to find
  * the courses and puts every information onto a Map.
- *
+ * 
  * @param {
- * } arr
+ * } arr 
  */
 async function scrapeSchedules(arr)
 {
@@ -147,7 +137,7 @@ async function scrapeSchedules(arr)
             let course = arr[i].split(" ");
             let section = [];
             allSections = [];
-            console.log("Courses: " + course + ", Days: " + days);
+            console.log("COurses: " + course + ", Days: " + days);
             await page.goto('https://patriotweb.gmu.edu/pls/prod/bwckschd.p_disp_dyn_sched');
             await page.select('select[name="p_term"]', '202370');
             await page.click('input[type="submit"]'); // click the submit button
@@ -185,12 +175,12 @@ async function scrapeSchedules(arr)
                         else if (determine == true)
                         {
                             ++count;
-                            if (courseTime.includes('<') && count < 17)
+                            if (courseTime.includes('<') && count < 17) 
                             {
                                 courseTime = "Async";
                                 break;
                             }
-                            else if (count >= 17 && courseTime.includes('<'))
+                            else if (count >= 17 && courseTime.includes('<')) 
                             {
                                 courseTime = courseTime.substring(0, courseTime.length-1);
                                 break;
@@ -212,12 +202,12 @@ async function scrapeSchedules(arr)
                         else if (determine == true)
                         {
                             ++count;
-                            if (courseDays.includes('&'))
+                            if (courseDays.includes('&')) 
                             {
                                 courseDays = "No days yet";
                                 break;
                             }
-                            else if (count > 1 && courseDays.includes('<'))
+                            else if (count > 1 && courseDays.includes('<')) 
                             {
                                 courseDays = courseDays.substring(0, courseDays.length-1);
                                 //console.log("FINISHED: " + courseDays)
@@ -237,12 +227,12 @@ async function scrapeSchedules(arr)
                         }
                         else if (determine == true)
                         {
-                            if (courseProf.includes('<'))
+                            if (courseProf.includes('<')) 
                             {
                                 courseProf = "No Professor yet";
                                 break;
                             }
-                            else if (courseProf.includes('('))
+                            else if (courseProf.includes('(')) 
                             {
                                 courseProf = courseProf.substring(0, courseProf.length-2);
                                 courseProf = courseProf.replace("   ", " ");
@@ -317,66 +307,20 @@ async function scrapeSchedules(arr)
     })();
 }
 
-
 //let arr = ["CS 483", "CS 452", "CS 306", "CS 468", "GGS 101"];
 //let arr = ["CS 483", "CS 452", "CS 306", "CS 468"];
-
 
 let randArr = [], lst = [];
 function generateSetup(arr)
 {
     days = arr[arr.length-1];
     arr.pop();
-    /*for(let i = 0; i < arr.length-1; ++i)
-    {
-        let t = 0;
-        while(t < 100)
-        {
-            let bool = true;
-            let a = parseInt(Math.random() * arr.length);
-            //console.log(a);
-            for(let j = 0; j < lst.length; ++j)
-            {
-                if (lst[j] == a)
-                {
-                    //console.log("FAILED AT: " + a);
-                    bool = false;
-                    break;
-                }
-            }
-            if (bool == false) ++t;
-            else
-            {
-                //console.log("PASS " + a);
-                lst.push(a);
-                randArr.push(arr[a]);
-                break;
-            }
-            ++t;
-        }
-        let j = 0;
-        while (j < lst.length-1)
-        {
-            if (!lst.includes(j))
-            {
-                //console.log("PASS 2 " + j);
-                lst.push(j);
-                randArr.push(arr[j]);
-                break;
-            }
-            ++j;
-        }
-    }*/
-    //console.log(arr);
-    //console.log(days);
     scrapeSchedules(arr);
     //waitForSchedule();
     generateSchedule(arr);
 }
 
-
 module.exports = {
     generateSetup: generateSetup,
     schedule: schedule,
     gLock: lock2};
-

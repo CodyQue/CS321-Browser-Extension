@@ -2,9 +2,6 @@
 <html class = "h-full">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.jsdelivr.net/npm/">
-  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js'></script>
-  <script src="calendar.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="../public/styles.css" rel="stylesheet">
@@ -23,16 +20,18 @@
       </a>
   </div> 
   <div class = "width: 0.5rem" style = "position:relative; right:30px; top:-7px">
-      <a href="randomSchedule.html">
+      <a href="result.html">
           <span>New Schedule</span>
       </a>
   </div>
   </div>
-  <div id = "Title" style = "position:relative; bottom:225px; left:125px;">
-    <h1 >Generated Your Schedule!</h1>
+  <div id = "Outline" style = "position:relative; left:50px;">
+    <div id = "Title" style = "position:relative; bottom:225px; left:125px;">
+      <h1 >Generated Your Schedule!</h1>
+    </div>
+    <div id = "results" style = "position:relative; bottom:225px; left:80px;"></div>
+    <script src="fetchFromServer.js"></script>
   </div>
-  <div id = "results" style = "position:relative; bottom:225px; left:80px;"></div>
-  <script src="fetchFromServer.js"></script>
   <div id = "end of extension"></div>
 </body>
 </html>

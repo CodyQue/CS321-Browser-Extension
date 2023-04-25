@@ -56,7 +56,7 @@ const postButton = document.getElementById("post");
             {
                 courses += input1.value;
                 ++courseCount;
-                time+=13000;
+                time+=14000;
             }
             if (!(input2.value ==''))
             {
@@ -66,7 +66,7 @@ const postButton = document.getElementById("post");
                 }
                 courses += input2.value;
                 ++courseCount;
-                time+=13000;
+                time+=14000;
             }
             if (!(input3.value ==''))
             {
@@ -76,7 +76,7 @@ const postButton = document.getElementById("post");
                 }
                 courses += input3.value;
                 ++courseCount;
-                time+=13000;
+                time+=14000;
             }
             if (!(input4.value ==''))
             {
@@ -86,7 +86,7 @@ const postButton = document.getElementById("post");
                 }
                 courses += input4.value;
                 ++courseCount;
-                time+=13000;
+                time+=14000;
             }
             if (!(input5.value ==''))
             {
@@ -96,7 +96,7 @@ const postButton = document.getElementById("post");
                 }
                 courses += input5.value;
                 ++courseCount;
-                time+=13000;
+                time+=14000;
             }
             console.log(time);
             e.preventDefault();

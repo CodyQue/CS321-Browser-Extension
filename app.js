@@ -11,6 +11,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors = require('cors');
 const courseRandomizer= require("./src/CourseGenerator/findCourses");
+const findProf = require("./src/FindProfessor/comments");
 const PORT = 8000;
 
 var indexRouter = require('./routes/index');
@@ -33,6 +34,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 let parcel = '';
+let parcel2 = '';
 let count = 0;
 let lock = 1;
 
@@ -53,18 +55,32 @@ app.post('/users', (req, res) => {
         await new Promise(resolve => setTimeout(resolve, 2000));
       }
       parcel = courseRandomizer.schedule;
-      let newSchedule = "";
-      for(let i = 0; i < courseRandomizer.schedule.length; ++i)
-      {
-        newSchedule = '<li>' + courseRandomizer.schedule[i][0] + " " + courseRandomizer.schedule[i][1] + " " + + courseRandomizer.schedule[i][2] + " " + courseRandomizer.schedule[i][3] + " " + courseRandomizer.schedule[i][4]+ '</li>';
-      }
       //res.redirect('/interface/result.html');
       console.log("DONE")
     })();
     //console.log("DOne");
   }
+  else if (parcel.includes("findProfessor"))
+  {
+    let arr = parcel.split('/');
+    console.log("Finding professor: " + arr[0]);
+    findProf.startFindingProfessor(arr[0]);
+    (async () => {
+      while(findProf.profInfoArr.length == 0)
+      {
+        console.log("NEW Waiting for professor rating");
+        await new Promise(resolve => setTimeout(resolve, 10000));
+      }
+      parcel2 = findProf.profInfoArr;
+      console.log("DONE")
+    })();
+  }
   console.log(`Received parcel: ${parcel}`);
   res.send(parcel);
+});
+
+app.get('/test2', (req, res) => {
+  res.status(200).send('<h1>'+ parcel2 + '</h1>');
 });
 
 app.get('/test', (req, res) => {
