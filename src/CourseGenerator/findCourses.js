@@ -41,7 +41,7 @@ async function waitForSchedule()
 {
     while(lock == 1) //This will wait until the listOfCourses map gets filled
     {
-        console.log("Waiting");
+        console.log("Waiting: " + process.pid);
         await new Promise(resolve => setTimeout(resolve, 2000));
     }
     console.log(listOfCourses);
@@ -57,7 +57,7 @@ async function generateSchedule(arr)
 {
     while(lock == 1) //This will wait until the listOfCourses map gets filled
     {
-        console.log("Waiting");
+        console.log("Waiting: " + process.pid);
         await new Promise(resolve => setTimeout(resolve, 2000));
     }
     console.log(listOfCourses);

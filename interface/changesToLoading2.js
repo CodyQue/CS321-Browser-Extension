@@ -1,4 +1,4 @@
-const button = document.querySelector('#post2');
-button.addEventListener('click', () => {
-    button.innerText = 'LOADING.....';
+const button2 = document.querySelector('#post2');
+button2.addEventListener('click', () => {
+    button2.innerText = 'LOADING.....';
 });

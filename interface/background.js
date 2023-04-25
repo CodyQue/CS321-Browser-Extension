@@ -10,6 +10,7 @@ let days = "";
 let courses = "";
 let courseCount = 0;
 let time = 0;
+let lock = 1;
 
 const input1 = document.getElementById("input1");
 const input2 = document.getElementById("input2");
@@ -98,7 +99,13 @@ const postButton = document.getElementById("post");
                 ++courseCount;
                 time+=14000;
             }
-            console.log(time);
+            lock = 0;
+            while (lock == 1)
+            {
+                console.log("Waiting for lock");
+                await new Promise(resolve => setTimeout(resolve, 2000));
+            }
+            console.log("Time: " + time);
             e.preventDefault();
             //if (input1.value == '') return;
             

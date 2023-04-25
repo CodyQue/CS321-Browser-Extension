@@ -6,32 +6,31 @@
   <title>Document</title>
   <link href="../public/styles.css" rel="stylesheet">
 </head>
-<body class ="text-gray-700 w-full h-full bg-no-repeat bg-cover" style="background-image: url(./file2.png) ">
-    <div class = "bg-contain flex justify-between py-5 px-1 h-full" id = "menu" style=" position: relative; width: 500px; height: 300px; "> <!-- Different sections of the browser extension-->
-        <div class = "width: 0.5rem" style = "position:relative; right:2px; top:-7px">
-            <a href = "#">Settings</a>
-           
-        </div>
-        <div class = "width: 0.5rem" style = "position:relative; left:4px; top:-7px" >
-          <a href = "about.html">About</a>
-        </div>
-        <div class = "width: 0.5rem" style = "position:relative; left:16px; top:-7px">
-            <a href="menu.html">
-                <span>Schedule</span>
-            </a>
-        </div> 
-        <div class = "width: 0.5rem" style = "position:relative; right:30px; top:-7px">
-            <a href="randomSchedule.html">
-                <span>New Schedule</span>
-            </a>
-        </div>
+<body class ="text-gray-700 w-full h-full bg-no-repeat bg-cover" style="background-image: url(./file2.png)">
+  <div class = "bg-contain flex justify-between py-5 px-1 h-full" id = "menu" style="width: 500px; height: 300px;"> <!-- Different sections of the browser extension-->
+  <div class = "width: 0.5rem" style = "position:relative; right:2px; top:-7px">
+      <a href = "#">Settings</a>
   </div>
-  <div id = "searchProfessor" class= "center" style = "position:relative; left:300px; top:-50px">
-    <h1>Enter Professor's Name</h1>
-    <input type="text" id="input"/>
-    <button id="post">ENTER</button>
-    <script src = 'background.js'></script>
+  <div class = "width: 0.5rem" style = "position:relative; left:4px; top:-7px" >
+    <a href = "about.html">About</a>
   </div>
-  <div id = "end of extension"></div>
+  <div class = "width: 0.5rem" style = "position:relative; left:16px; top:-7px">
+      <a href="menu.html">
+          <span>Schedule</span>
+      </a>
+  </div> 
+  <div class = "width: 0.5rem" style = "position:relative; right:30px; top:-7px">
+      <a href="result.html">
+          <span>New Schedule</span>
+      </a>
+  </div>
+  </div>
+  <div id = "Outline" style = "position:relative; bottom:25px; left:50px;">
+    <div id = "Title" style = "position:relative; bottom:225px; left:125px;">
+      <h1 >Found Professor!</h1>
+    </div>
+    <div id = "results" style = "position:relative; bottom:220px; left:90px;"></div>
+    <script src="getCourseSchedule.js"></script>
+  </div>
 </body>
 </html>

@@ -12,6 +12,7 @@ const fs = require('fs');
 let overallRating = 0;
 let profInfoArr = [];
 let arrLock = 1;
+var commentCount = 0;
 
 /**
  * Organizes all the comments into a 2D array
@@ -25,8 +26,7 @@ function organizeComments(arr)
     let max = arr.length;
     let i = 0;
     let added = 0, found = 0;
-    let count = 0;
-    while (i < max && count < 2)
+    while (i < max && commentCount < 2)
     {
         let foundComment = false;
         const newArr2 = [];
@@ -59,7 +59,7 @@ function organizeComments(arr)
                 newArr2.push(arr[i + 7]); //adds the data
                 newArr.push(newArr2); //adds it to main array
                 profInfoArr.push(newArr2);
-                ++count;
+                ++commentCount;
             }
         }
         foundComment = false;
@@ -174,6 +174,7 @@ function findProfAndRating(name, URL)
                     //putInMap(arr);
                    
                     console.log(profInfoArr);
+                    console.log("Comment count: " + commentCount);
                     break;
                 }
             }
@@ -232,7 +233,8 @@ function startFindingProfessor(name)
 
 module.exports = {
     startFindingProfessor: startFindingProfessor,
-    profInfoArr: profInfoArr};
+    profInfoArr: profInfoArr,
+    commentCount: commentCount};
 
 //app.use.express.static('../../interface');
 
