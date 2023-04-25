@@ -53,6 +53,11 @@ app.post('/users', (req, res) => {
         await new Promise(resolve => setTimeout(resolve, 2000));
       }
       parcel = courseRandomizer.schedule;
+      let newSchedule = "";
+      for(let i = 0; i < courseRandomizer.schedule.length; ++i)
+      {
+        newSchedule = '<li>' + courseRandomizer.schedule[i][0] + " " + courseRandomizer.schedule[i][1] + " " + + courseRandomizer.schedule[i][2] + " " + courseRandomizer.schedule[i][3] + " " + courseRandomizer.schedule[i][4]+ '</li>';
+      }
       //res.redirect('/interface/result.html');
       console.log("DONE")
     })();

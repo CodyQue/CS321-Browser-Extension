@@ -9,6 +9,7 @@
 let days = "";
 let courses = "";
 let courseCount = 0;
+let time = 0;
 
 const input1 = document.getElementById("input1");
 const input2 = document.getElementById("input2");
@@ -27,7 +28,7 @@ const postButton = document.getElementById("post");
         postButton.addEventListener('click', postInfo);
         async function postInfo(e) 
         {
-            if (date1.checked)
+            if (date1.checked) //Checks days
             {
                 days += date1.value;
             }
@@ -51,10 +52,11 @@ const postButton = document.getElementById("post");
             {
                 days += date6.value;
             }
-            if (!(input1.value ==''))
+            if (!(input1.value =='')) //Checks courses
             {
                 courses += input1.value;
                 ++courseCount;
+                time+=13000;
             }
             if (!(input2.value ==''))
             {
@@ -64,6 +66,7 @@ const postButton = document.getElementById("post");
                 }
                 courses += input2.value;
                 ++courseCount;
+                time+=13000;
             }
             if (!(input3.value ==''))
             {
@@ -73,6 +76,7 @@ const postButton = document.getElementById("post");
                 }
                 courses += input3.value;
                 ++courseCount;
+                time+=13000;
             }
             if (!(input4.value ==''))
             {
@@ -82,6 +86,7 @@ const postButton = document.getElementById("post");
                 }
                 courses += input4.value;
                 ++courseCount;
+                time+=13000;
             }
             if (!(input5.value ==''))
             {
@@ -91,7 +96,9 @@ const postButton = document.getElementById("post");
                 }
                 courses += input5.value;
                 ++courseCount;
+                time+=13000;
             }
+            console.log(time);
             e.preventDefault();
             //if (input1.value == '') return;
             
@@ -109,5 +116,6 @@ const postButton = document.getElementById("post");
                         "/" + "generateSchedule")
                 })
             });
-            window.location.href = "./loading.html";
+            await new Promise(resolve => setTimeout(resolve, time));
+            window.location.href = "./result.html";
         }

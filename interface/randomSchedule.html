@@ -28,10 +28,10 @@
   <div id = "Make Schedule" style = "position:relative; left:30px; top:-250px">
     <h1><strong>Generate A Schedule For Your Next Semester!</strong></h1>
     <h1 style = "position:relative; top:10px">1:   <input type="text" id="input1" size="50"/></h1>
-    <h1 style = "position:relative; top:20px">2:   <input type="text" id="input2"/></h1>
-    <h1 style = "position:relative; top:30px">3:   <input type="text" id="input3"/></h1>
-    <h1 style = "position:relative; top:40px">4:   <input type="text" id="input4"/></h1>
-    <h1 style = "position:relative; top:50px">5:   <input type="text" id="input5"/></h1>
+    <h1 style = "position:relative; top:20px">2:   <input type="text" id="input2" size ="50"/></h1>
+    <h1 style = "position:relative; top:30px">3:   <input type="text" id="input3" size="50"/></h1>
+    <h1 style = "position:relative; top:40px">4:   <input type="text" id="input4" size="50"/></h1>
+    <h1 style = "position:relative; top:50px">5:   <input type="text" id="input5" size="50"/></h1>
     <button id="post" style = "position:relative; top:100px">ENTER</button>
     <div id = "Days Of The Week">
         <input type="checkbox" id="M" name="Monday" value="M" style = "position:relative; top:40px" checked>
@@ -46,17 +46,15 @@
         <label for="F" style = "position:relative; top:40px">F</label>
         <input type="checkbox" id="S" name="Saturday" value="S"style = "position:relative; top:40px">
         <label for="Sat" style = "position:relative; top:40px">S</label>
-    </div>
-    <div id = "Async">
         <input type="checkbox" id="Async" name="Async" value="Async" style = "position:relative; top:40px">
         <label for="Async" style = "position:relative; top:40px">Prioritize Async Courses</label>
     </div>
-    <div id = "Find Prof" style = "position:relative; left:300px; top:50px">
-        <a href="findProfessor.html">
-            <input type="button" value = "Find Professor">
-        </a>
-        </div>
-    <script src = 'background.js'></script>
+    <div id = "searchProfessor" class= "center" style = "position:relative; left:150px; top:45px">
+        <h1>Enter Professor's Name</h1>
+        <input type="text" id="input"/>
+        <button id="post">FIND</button>
+        <script src = 'background.js'></script>
+      </div>
   </div>
   <div id = "end of extension"></div>
 </body>
