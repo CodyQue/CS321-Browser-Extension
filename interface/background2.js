@@ -26,6 +26,6 @@ const postButton2 = document.getElementById("post2");
                         "/" + "findProfessor")
                 })
             });
-            await new Promise(resolve => setTimeout(resolve, 9000));
+            await new Promise(resolve => setTimeout(resolve, 11000));
             window.location.href = "./findProfessor.html";
         }

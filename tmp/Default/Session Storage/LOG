@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 2023/04/26-09:24:58.110 2aa4 Reusing MANIFEST C:\Users\citta\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
 2023/04/26-09:24:58.110 2aa4 Recovering log #18
@@ -36,3 +37,24 @@
 2023/04/26-09:31:17.411 687c Level-0 table #256: started
 2023/04/26-09:31:17.414 687c Level-0 table #256: 48893 bytes OK
 >>>>>>> 0958579521401b401686b578f24f41c2a7b67fd6
+=======
+2023/04/26-10:55:56.696 30f4 Reusing MANIFEST C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
+2023/04/26-10:55:56.697 30f4 Recovering log #321
+2023/04/26-10:55:56.698 30f4 Level-0 table #324: started
+2023/04/26-10:55:56.712 30f4 Level-0 table #324: 80962 bytes OK
+2023/04/26-10:55:56.712 30f4 Recovering log #323
+2023/04/26-10:55:56.713 30f4 Reusing old log C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/000323.log 
+2023/04/26-10:55:56.715 30f4 Delete type=0 #321
+2023/04/26-10:56:02.893 4780 Level-0 table #326: started
+2023/04/26-10:56:02.911 4780 Level-0 table #326: 49055 bytes OK
+2023/04/26-10:56:02.914 4780 Delete type=0 #323
+2023/04/26-10:56:02.915 4780 Compacting 4@0 + 1@1 files
+2023/04/26-10:56:02.959 4780 Generated table #327@0: 4750 keys, 316553 bytes
+2023/04/26-10:56:02.960 4780 Compacted 4@0 + 1@1 files => 316553 bytes
+2023/04/26-10:56:02.960 4780 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/04/26-10:56:02.962 4780 Delete type=2 #317
+2023/04/26-10:56:02.962 4780 Delete type=2 #319
+2023/04/26-10:56:02.962 4780 Delete type=2 #322
+2023/04/26-10:56:02.962 4780 Delete type=2 #324
+2023/04/26-10:56:02.962 4780 Delete type=2 #326
+>>>>>>> Stashed changes
