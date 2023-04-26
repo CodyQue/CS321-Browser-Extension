@@ -62,7 +62,11 @@ app.post('/users', (req, res) => {
   else if (req.body.parcel.includes("findProfessor"))
   {
     let arr = req.body.parcel.split('/');
-    console.log("Finding professor: " + arr[0]);
+    console.log("Finding professor: " + arr[0] + ", Arr: " + findProf.profInfoArr);
+    while (findProf.profInfoArr.length != 0)
+    {
+      findProf.profInfoArr.pop();
+    }
     findProf.startFindingProfessor(arr[0]);
     (async () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
@@ -71,7 +75,7 @@ app.post('/users', (req, res) => {
         console.log("NEW Waiting for professor rating");
         await new Promise(resolve => setTimeout(resolve, 10000));
       }
-      await new Promise(resolve => setTimeout(resolve, 7000));
+      await new Promise(resolve => setTimeout(resolve, 9500));
       for(let i = 0; i < findProf.profInfoArr.length; ++i)
       {
         console.log("GOING THROUGH LOOP");

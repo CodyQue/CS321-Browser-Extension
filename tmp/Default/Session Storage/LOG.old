@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 2023/04/26-09:22:32.991 499c Reusing MANIFEST C:\Users\citta\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
 2023/04/26-09:22:32.991 499c Recovering log #15
@@ -16,3 +17,13 @@
 2023/04/26-09:30:53.822 7410 Level-0 table #253: started
 2023/04/26-09:30:53.829 7410 Level-0 table #253: 53285 bytes OK
 >>>>>>> 0958579521401b401686b578f24f41c2a7b67fd6
+=======
+2023/04/26-10:55:32.140 3a88 Reusing MANIFEST C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
+2023/04/26-10:55:32.141 3a88 Recovering log #318
+2023/04/26-10:55:32.141 3a88 Reusing old log C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/000318.log 
+2023/04/26-10:55:38.489 430c Level-0 table #322: started
+2023/04/26-10:55:38.495 430c Level-0 table #322: 66388 bytes OK
+2023/04/26-10:55:38.496 430c Delete type=0 #318
+2023/04/26-10:55:40.639 36a4 Level-0 table #324: started
+2023/04/26-10:55:40.656 36a4 Level-0 table #324: 80962 bytes OK
+>>>>>>> Stashed changes

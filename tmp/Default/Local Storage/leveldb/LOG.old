@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 2023/04/26-09:22:32.699 1e7c Reusing MANIFEST C:\Users\citta\CS321-Browser-Extension\tmp\Default\Local Storage\leveldb/MANIFEST-000001
 2023/04/26-09:22:32.700 1e7c Recovering log #3
@@ -7,3 +8,8 @@
 2023/04/26-09:30:49.003 7410 Recovering log #16
 2023/04/26-09:30:49.003 7410 Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Local Storage\leveldb/000016.log 
 >>>>>>> 0958579521401b401686b578f24f41c2a7b67fd6
+=======
+2023/04/26-10:55:30.865 430c Reusing MANIFEST C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Local Storage\leveldb/MANIFEST-000001
+2023/04/26-10:55:30.866 430c Recovering log #16
+2023/04/26-10:55:30.867 430c Reusing old log C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Local Storage\leveldb/000016.log 
+>>>>>>> Stashed changes
