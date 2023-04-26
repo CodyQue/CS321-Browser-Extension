@@ -40,11 +40,9 @@ let count = 0;
 let lock = 1;
 
 app.post('/users', (req, res) => {
-  parcel = req.body.parcel;
-  console.log(parcel);
-  if (parcel.includes("generateSchedule"))
+  if (req.body.parcel.includes("generateSchedule"))
   {
-    let arr = parcel.split('/');
+    let arr = req.body.parcel.split('/');
     arr.pop();
     //console.log("Generating schedule");
     courseRandomizer.generateSetup(arr);
@@ -61,9 +59,9 @@ app.post('/users', (req, res) => {
     })();
     //console.log("DOne");
   }
-  else if (parcel.includes("findProfessor"))
+  else if (req.body.parcel.includes("findProfessor"))
   {
-    let arr = parcel.split('/');
+    let arr = req.body.parcel.split('/');
     console.log("Finding professor: " + arr[0]);
     findProf.startFindingProfessor(arr[0]);
     (async () => {
@@ -72,11 +70,17 @@ app.post('/users', (req, res) => {
         console.log("NEW Waiting for professor rating");
         await new Promise(resolve => setTimeout(resolve, 10000));
       }
-      parcel2 = findProf.profInfoArr;
+      await new Promise(resolve => setTimeout(resolve, 7000));
+      for(let i = 0; i < findProf.profInfoArr.length; ++i)
+      {
+        console.log("GOING THROUGH LOOP");
+        parcel2 += findProf.profInfoArr[i] + "/";
+      }
+      //parcel2 = findProf.profInfoArr;
       console.log("DONE")
     })();
   }
-  else if (parcel.includes("importSchedule"))
+  else if (req.body.parcel.includes("importSchedule"))
   {
     parcel3 = parcel.substring(0, parcel.length-13);
     console.log(parcel3);

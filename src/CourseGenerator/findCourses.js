@@ -98,21 +98,31 @@ async function scrapeSchedules(arr)
         {
             let course = arr[i].split(" ");
             let section = [];
+            let hrefArr = [];
             allSections = [];
             console.log("COurses: " + course + ", Days: " + days);
             await page.goto('https://patriotweb.gmu.edu/pls/prod/bwckschd.p_disp_dyn_sched');
             await page.select('select[name="p_term"]', '202370');
-            await page.click('input[type="submit"]'); // click the submit button
+            await page.click('input[type="submit"]');
             await new Promise(resolve => setTimeout(resolve, 2500));
             await page.waitForSelector('#subj_id');
             await page.select('#subj_id', course[0]);
             await new Promise(resolve => setTimeout(resolve, 2500));
             await page.waitForSelector('#crse_id');
             await page.type('#crse_id', course[1]);
-            await page.click('input[type="submit"]'); // click the submit button
+            await page.click('input[type="submit"]');
             await new Promise(resolve => setTimeout(resolve, 2500));
             const html = await page.content();
-            let newArr = html.split("\n"); //This is used to find the different sections of each course
+            let newArr = html.split("\n"); //This is used to loop through each sections of each course
+            const hrefs = await page.$$eval('a', (links) => links.map(link => link.href));
+            for(let l = 0; l < hrefs.length; ++l)
+            {
+                if (hrefs[l].includes('https://patriotweb.gmu.edu/pls/prod/bwckschd.p_disp_detail_sched?term_in='))
+                {
+                    hrefArr.push(hrefs[l]);
+                }
+            }
+            //console.log(hrefArr);
             //console.log(newArr);
             for(let j = 0; j < newArr.length; ++j) //Loops through each section
             {
@@ -262,6 +272,32 @@ async function scrapeSchedules(arr)
                 }
                 //console.log(allSections);
             }
+            /*for(let j = 0; j < hrefArr.length; ++j)
+            {
+                let fullCount = 0;
+                let breakCount = 0;
+                await page.goto(hrefArr[j]); //Goes to URL
+                const tables = await page.$$('table');
+
+                for (const table of tables) {
+                    const rows = await table.$$('tr');
+                    for (const row of rows) {
+                    const cells = await row.$$('th, td');
+                    for (const cell of cells) {
+                        const value = await cell.evaluate(node => node.innerText);
+                        if (value.localeCompare("Capacity") || value.localeCompare("Actual") || value.localeCompare("Remaining"))
+                        {
+                            fullCount++;
+                        }
+                        if (fullCount >= 3)
+                        {
+                            console.log("Value: " + value);
+                        }
+
+                    }
+                    }
+                }
+            }*/
             listOfCourses.set(arr[i], allSections);
         }
         lock = 0;
@@ -275,6 +311,10 @@ async function scrapeSchedules(arr)
 let randArr = [], lst = [];
 function generateSetup(arr)
 {
+    while (schedule.length != 0)
+    {
+        schedule.pop();
+    }
     days = arr[arr.length-1];
     arr.pop();
     scrapeSchedules(arr);

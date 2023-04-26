@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<HTML lang="en">
+<head><script>if(!OPNET_ARXS){var OPNET_ARXS={startJS:Number(new Date()),clientId:'9F2C83A29B9ABD50',appId: 100231,collector:'patriotweb.gmu.edu',collectorHttpPort:8101,collectorHttpsPort:8900,sv:'0302'};(function(){var w=window,l=w.addEventListener,m=w.attachEvent,d=document,s='script',t='load',o=OPNET_ARXS,r='https://patriotweb.gmu.edu/opnet_browsermetrix.c.js',p=('onpagehide' in w),e=p?'pageshow':t,j=d.createElement(s),x=d.getElementsByTagName(s)[0],h=function(y){o.ldJS=new Date();o.per=y?y.persisted:null;},i=function(){o.ld=1;};o.cookie=d.cookie;d.cookie='_op_aixPageId=0; path=/; expires='+(new Date(0)).toGMTString();o.cookieAfterDelete=d.cookie;j.async=1;j.src=r;if(l){l(e,h,false);if(p){l(t,i,false);}}else if(m){m('on'+e,h);if(p){m('on'+t,i);}}if(o.sync){d.write('<'+s+' src=\''+r+'\'></'+s+'>');}else{x.parentNode.insertBefore(j,x);}})();} </script>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<LINK REL="stylesheet" HREF="/gmugifs/web_defaultapp.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="/css/web_defaultprint.css" TYPE="text/css" media="print">
+<title>Detailed Class Information</title>
+<meta http-equiv="Content-Script-Type" name="Default_Script_Language" content="text/javascript">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+</head>
+<body>
+<div id="headerImage">
+<img src="/gmugifs/color_150.gif" alt="George Mason University" CLASS="headerImg" TITLE="George Mason University"  NAME="Mason Logo - Color 150" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=112 WIDTH=150 />
+</div>
+<div class="headerwrapperdiv">
+<div class="pageheaderdiv1">
+<a href="#main_content" onMouseover="window.status='Go to Main Content'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Go to Main Content'; return true" onBlur="window.status=''; return true" class="skiplinks">Go to Main Content</a>
+<h1> </h1></DIV><div class="headerlinksdiv">
+</DIV>
+<table  CLASS="plaintable" SUMMARY="This table displays Menu Items and Banner Search textbox."
+         WIDTH="100%">
+<tr>
+<TD CLASS="pldefault">
+<div class="headerlinksdiv2">
+&nbsp;
+</div>
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext" /p>
+<SPAN class="pageheaderlinks">
+<a href="/wtlhelp/twbhhelp.htm" accesskey="H" onClick="popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onMouseOver="window.status='';  return true" onMouseOut="window.status=''; return true"onFocus="window.status='';  return true" onBlur="window.status=''; return true"  class="submenulinktext2">HELP</a>
+|
+<a href="twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</a>
+</span>
+</TD>
+</tr>
+</table>
+</DIV>
+<div class="pagetitlediv">
+<table  CLASS="plaintable" SUMMARY="This table displays title and static header displays."
+   WIDTH="100%">
+<tr>
+<TD CLASS="pldefault">
+<h2>Detailed Class Information</h2>
+</TD>
+<TD CLASS="pldefault">
+&nbsp;
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext" /p>
+<div class="staticheaders">
+Fall 2023<br>
+Apr 26, 2023<br>
+</div>
+</TD>
+</tr>
+<tr>
+<TD class="bg3" width="100%" colSpan=3><img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10 /></TD>
+</tr>
+</table>
+<a name="main_content"></a>
+</DIV>
+<div class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+
+<table  CLASS="datadisplaytable" SUMMARY="This table is used to present the detailed class information." width="100%"><caption class="captiontext">Detailed Class Information</caption>
+<tr>
+<th CLASS="ddlabel" scope="row" >Software Engineering - 73031 - CS 321 - 001<br /><br /></th>
+</tr>
+<tr>
+<TD CLASS="dddefault">
+<SPAN class="fieldlabeltext">Associated Term: </SPAN>Fall 2023 
+<br />
+<SPAN class="fieldlabeltext">Levels: </SPAN>Non-Degree, Undergraduate, Washington Consortium 
+<br />
+<br />
+Fairfax Campus
+<br />
+Lecture Schedule Type
+<br />
+On-campus F2F 76-100% Instructional Method
+<br />
+       3.000 Credits
+<br />
+<a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=CS&amp;sel_crse_strt=321&amp;sel_crse_end=321&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br />
+<br />
+<br />
+<table  CLASS="datadisplaytable" SUMMARY="This layout table is used to present the seating numbers." width = "100%"><caption class="captiontext">Registration Availability</caption>
+<tr>
+<td CLASS="dddead">&nbsp;</td>
+<th CLASS="ddheader" scope="col" ><SPAN class="fieldlabeltext">Capacity</SPAN></th>
+<th CLASS="ddheader" scope="col" ><SPAN class="fieldlabeltext">Actual</SPAN></th>
+<th CLASS="ddheader" scope="col" ><SPAN class="fieldlabeltext">Remaining</SPAN></th>
+<tr>
+<th CLASS="ddlabel" scope="row" ><SPAN class="fieldlabeltext">Seats</SPAN></th>
+<td CLASS="dddefault">35</td>
+<td CLASS="dddefault">35</td>
+<td CLASS="dddefault">0</td>
+</tr>
+<tr>
+<th CLASS="ddlabel" scope="row" ><SPAN class="fieldlabeltext">Waitlist Seats</SPAN></th>
+<td CLASS="dddefault">99</td>
+<td CLASS="dddefault">12</td>
+<td CLASS="dddefault">87</td>
+</tr>
+</table>
+<br />
+<SPAN class="fieldlabeltext">Restrictions:</SPAN>
+<br />
+Must be enrolled in one of the following Programs:&nbsp; &nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &nbsp; BS Applied Computer Science
+<br />
+&nbsp; &nbsp; &nbsp; BS Computer Science
+<br />
+&nbsp; &nbsp; &nbsp; BS Systems Engineering
+<br />
+Must be enrolled in one of the following Fields of Study (Major, Minor,  or Concentration):
+<br />
+&nbsp; &nbsp; &nbsp; Applied Computer Science
+<br />
+&nbsp; &nbsp; &nbsp; Computer Science
+<br />
+&nbsp; &nbsp; &nbsp; Software Engineering
+<br />
+&nbsp; &nbsp; &nbsp; Systems Engineering
+<br />
+May not be assigned one of the following Student Attributes:&nbsp; &nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &nbsp; terminated from CEC major
+<br />
+May not be enrolled in one of the following Campuses:&nbsp; &nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &nbsp; GMU Korea
+<br />
+<br />
+<SPAN class="fieldlabeltext">Prerequisites: </SPAN>
+<br />
+ (Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=CS&amp;sel_subj=&amp;sel_crse_strt=310&amp;sel_crse_end=310&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">CS 310</a> Minimum Grade of C or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=CS&amp;sel_subj=&amp;sel_crse_strt=310&amp;sel_crse_end=310&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">CS 310</a> Minimum Grade of XS) and (Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=ENGH&amp;sel_subj=&amp;sel_crse_strt=302&amp;sel_crse_end=302&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">ENGH 302</a> Minimum Grade of C or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=ENGH&amp;sel_subj=&amp;sel_crse_strt=302&amp;sel_crse_end=302&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">ENGH 302</a> Minimum Grade of XS or ( <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=&amp;sel_subj=&amp;sel_crse_strt=&amp;sel_crse_end=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr="> </a> (Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=110&amp;sel_crse_end=110&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 110</a> Minimum Grade of C or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=110&amp;sel_crse_end=110&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 110</a> Minimum Grade of XS) and (Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=122&amp;sel_crse_end=122&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 122</a> Minimum Grade of C or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=122&amp;sel_crse_end=122&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 122</a> Minimum Grade of XS)  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=&amp;sel_subj=&amp;sel_crse_strt=&amp;sel_crse_end=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr="> </a>) or ( <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=&amp;sel_subj=&amp;sel_crse_strt=&amp;sel_crse_end=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr="> </a> (Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=110&amp;sel_crse_end=110&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 110</a> Minimum Grade of C or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=110&amp;sel_crse_end=110&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 110</a> Minimum Grade of XS) and (Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=130&amp;sel_crse_end=130&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 130</a> Minimum Grade of C or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=130&amp;sel_crse_end=130&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 130</a> Minimum Grade of XS)  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=&amp;sel_subj=&amp;sel_crse_strt=&amp;sel_crse_end=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr="> </a>) or (Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=131&amp;sel_crse_end=131&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 131</a> Minimum Grade of C or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=131&amp;sel_crse_end=131&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 131</a> Minimum Grade of XS or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=240&amp;sel_crse_end=240&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 240</a> Minimum Grade of C or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=240&amp;sel_crse_end=240&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 240</a> Minimum Grade of XS or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=260&amp;sel_crse_end=260&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 260</a> Minimum Grade of C or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=260&amp;sel_crse_end=260&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 260</a> Minimum Grade of XS or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=261&amp;sel_crse_end=261&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 261</a> Minimum Grade of C or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=261&amp;sel_crse_end=261&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 261</a> Minimum Grade of XS or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=360&amp;sel_crse_end=360&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 360</a> Minimum Grade of C or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=360&amp;sel_crse_end=360&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 360</a> Minimum Grade of XS or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=361&amp;sel_crse_end=361&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 361</a> Minimum Grade of C or Undergraduate level  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=HNRS&amp;sel_subj=&amp;sel_crse_strt=361&amp;sel_crse_end=361&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">HNRS 361</a> Minimum Grade of XS)  <a href="/pls/prod/bwckctlg.p_display_courses?term_in=202370&amp;one_subj=&amp;sel_subj=&amp;sel_crse_strt=&amp;sel_crse_end=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr="> </a>)
+<br />
+<br />
+<br />
+</TD>
+</tr>
+</table>
+<br />
+<table  CLASS="datadisplaytable" SUMMARY="This is for formatting of the bottom links." WIDTH="50%">
+<tr>
+<TD CLASS="ntdefault">
+<a href="javascript:history.go(-1)" onMouseOver="window.status='Return to Previous';  return true" onFocus="window.status='Return to Previous';  return true" onMouseOut="window.status='';  return true"onBlur="window.status='';  return true">Return to Previous</a>
+</TD>
+</tr>
+</table>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<table  CLASS="plaintable" SUMMARY="This is table displays line separator at end of the page."
+                                             WIDTH="100%" cellSpacing=0 cellPadding=0 border=0><tr><TD class="bgtabon" width="100%" colSpan=2><img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10 /></TD></tr></table>
+<a href="#top" onMouseover="window.status='Skip to top of page'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Skip to top of page'; return true" onBlur="window.status=''; return true" class="skiplinks">Skip to top of page</a>
+</DIV>
+<div class="footerbeforediv">
+
+</DIV>
+<div class="footerafterdiv">
+
+</DIV>
+<div class="globalafterdiv">
+
+</DIV>
+<div class="globalfooterdiv">
+
+</DIV>
+<div class="pagefooterdiv">
+<SPAN class="releasetext">Release: 8.7.2.6</SPAN>
+</DIV>
+<div class="poweredbydiv">
+</DIV>
+<DIV class="div1"></DIV>
+<DIV class="div2"></DIV>
+<DIV class="div3"></DIV>
+<DIV class="div4"></DIV>
+<DIV class="div5"></DIV>
+<DIV class="div6"></DIV>
+<div class="banner_copyright"> <br><h5>© 2023 Ellucian Company L.P. and its affiliates.<br></h5></div>
+</body>
+</html>

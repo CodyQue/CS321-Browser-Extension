@@ -153,19 +153,9 @@ function findProfAndRating(name, URL)
                 {
                     //console.log("FOUND PROF PAGE");
                     await page.goto(hrefs[i]); //Goes to page
-                    try{
-                        while(true)
-                        {
-                            await page.click('button.Buttons__Button-sc-19xdot-1.PaginationButton__StyledPaginationButton-txi1dr-1.gjQZal');
-                            console.log("EXPANDED");
-                            await new Promise(resolve => setTimeout(resolve, 2000));
-                        }
-                    }
-                    catch(error)
-                    {
-                        console.log("NOT EXPANDED");
-                    }
-                    await new Promise(resolve => setTimeout(resolve, 5000));
+                    await page.click('button.Buttons__Button-sc-19xdot-1.PaginationButton__StyledPaginationButton-txi1dr-1.gjQZal');
+                    console.log("EXPANDED");
+                    await new Promise(resolve => setTimeout(resolve, 2000));
                     const comments = await page.evaluate(() => document.body.innerText);
                     //console.log(comments);
                     var arr = comments.split("\n");
@@ -225,6 +215,7 @@ function startFindingProfessor(name)
     let temp = name.split(' ');
     URL += temp[0] + "%20" + temp[1];
     console.log(URL);
+    profInfoArr.push(name);
     findProfAndRating(name, URL);
 }
 
