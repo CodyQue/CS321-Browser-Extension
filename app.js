@@ -65,6 +65,7 @@ app.post('/users', (req, res) => {
     console.log("Finding professor: " + arr[0]);
     findProf.startFindingProfessor(arr[0]);
     (async () => {
+      await new Promise(resolve => setTimeout(resolve, 1000));
       while(findProf.profInfoArr.length == 0)
       {
         console.log("NEW Waiting for professor rating");

@@ -211,6 +211,10 @@ function askUser()
 
 function startFindingProfessor(name)
 {
+    while(profInfoArr.length != 0)
+    {
+        profInfoArr.pop();
+    }
     let URL = "https://www.ratemyprofessors.com/search/teachers?query=";
     let temp = name.split(' ');
     URL += temp[0] + "%20" + temp[1];
