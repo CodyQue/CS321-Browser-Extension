@@ -7,46 +7,8 @@ let schedule = [];
 let scheduleCount = 0;
 let days = "";
 
-/*listOfCourses.set('CS 483', [
-    [ '3:00 pm - 4:15 pm', 'TR', 'Grigory Yaroslavtsev' ],
-    [ '10:30 am - 11:45 am', 'TR', 'Katherine E Russell' ],
-    [ '8:30 am - 9:20 am', 'MWF', 'Ivan Avramovic' ],
-    [ '12:30 pm - 1:20 pm', 'MWF', 'No Professor yet' ]
-  ]);
-
-listOfCourses.set('CS 452', [ [ '12:00 pm - 1:15 pm', 'TR', 'Lap Fai Yu' ] ]);
-
-listOfCourses.set('CS 306', [
-    [ '9:00 am - 10:15 am', 'TR', 'Tamara A Maddox' ],
-    [ '10:30 am - 11:45 am', 'TR', 'Tamara A Maddox' ],
-    [ '1:30 pm - 2:45 pm', 'TR', 'John E Otten' ],
-    [ '1:30 pm - 4:10 pm', 'W', 'Fred W Geldon' ],
-    [ '10:30 am - 11:45 am', 'TR', 'John E Otten' ],
-    [ '1:30 pm - 2:45 pm', 'MW', 'No Professor yet' ],
-    [ '3:00 pm - 4:15 pm', 'MW', 'No Professor yet' ]
-  ])
-
-  listOfCourses.set('CS 468', [[ '9:00 am - 10:15 am', 'TR', 'Maha Shamseddine' ],
-  [ '3:00 pm - 4:15 pm', 'TR', 'Maha Shamseddine' ]])*/
-
 let lock = 1, lock2 = 1, profRatinglock = 0; //Locking variable
 let nextLock = 1;
-
-/**
- * 
- * Prints the contents of the list of courses.
- * 
- */
-async function waitForSchedule()
-{
-    while(lock == 1) //This will wait until the listOfCourses map gets filled
-    {
-        console.log("Waiting: " + process.pid);
-        await new Promise(resolve => setTimeout(resolve, 2000));
-    }
-    console.log(listOfCourses);
-    lock = 1;
-}
 
 /**
  * 

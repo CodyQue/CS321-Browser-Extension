@@ -35,15 +35,14 @@ app.use('/users', usersRouter);
 
 let parcel = '';
 let parcel2 = '';
+let parcel3 = '';
 let count = 0;
 let lock = 1;
 
 app.post('/users', (req, res) => {
-  parcel = req.body.parcel;
-  console.log(parcel);
-  if (parcel.includes("generateSchedule"))
+  if (req.body.parcel.includes("generateSchedule"))
   {
-    let arr = parcel.split('/');
+    let arr = req.body.parcel.split('/');
     arr.pop();
     //console.log("Generating schedule");
     courseRandomizer.generateSetup(arr);
@@ -60,9 +59,9 @@ app.post('/users', (req, res) => {
     })();
     //console.log("DOne");
   }
-  else if (parcel.includes("findProfessor"))
+  else if (req.body.parcel.includes("findProfessor"))
   {
-    let arr = parcel.split('/');
+    let arr = req.body.parcel.split('/');
     console.log("Finding professor: " + arr[0]);
     findProf.startFindingProfessor(arr[0]);
     (async () => {
@@ -75,8 +74,17 @@ app.post('/users', (req, res) => {
       console.log("DONE")
     })();
   }
+  else if (req.body.parcel.includes("importSchedule"))
+  {
+    parcel3 = req.body.parcel.substring(0, parcel.length-13);
+    console.log(parcel3);
+  }
   console.log(`Received parcel: ${parcel}`);
   res.send(parcel);
+});
+
+app.get('/test3', (req, res) => {
+  res.status(200).send('<h1>'+ parcel3 + '</h1>');
 });
 
 app.get('/test2', (req, res) => {
