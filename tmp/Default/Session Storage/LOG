@@ -1,60 +1,6 @@
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-2023/04/26-09:24:58.110 2aa4 Reusing MANIFEST C:\Users\citta\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
-2023/04/26-09:24:58.110 2aa4 Recovering log #18
-2023/04/26-09:24:58.110 2aa4 Reusing old log C:\Users\citta\CS321-Browser-Extension\tmp\Default\Session Storage/000018.log 
-2023/04/26-09:25:04.134 3230 Level-0 table #22: started
-2023/04/26-09:25:04.139 3230 Level-0 table #22: 34391 bytes OK
-2023/04/26-09:25:04.142 3230 Delete type=0 #18
-2023/04/26-09:25:04.143 3230 Compacting 4@0 + 1@1 files
-2023/04/26-09:25:04.149 3230 Generated table #23@0: 26 keys, 33700 bytes
-2023/04/26-09:25:04.149 3230 Compacted 4@0 + 1@1 files => 33700 bytes
-2023/04/26-09:25:04.151 3230 compacted to: files[ 0 1 0 0 0 0 0 ]
-2023/04/26-09:25:04.151 3230 Delete type=2 #12
-2023/04/26-09:25:04.152 3230 Delete type=2 #14
-2023/04/26-09:25:04.152 3230 Delete type=2 #16
-2023/04/26-09:25:04.152 3230 Delete type=2 #19
-2023/04/26-09:25:04.152 3230 Delete type=2 #22
-2023/04/26-09:25:05.316 3880 Level-0 table #25: started
-2023/04/26-09:25:05.323 3880 Level-0 table #25: 46464 bytes OK
-=======
-2023/04/26-09:31:12.979 7fc8 Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
-2023/04/26-09:31:12.979 7fc8 Recovering log #250
-2023/04/26-09:31:12.979 7fc8 Level-0 table #253: started
-2023/04/26-09:31:12.981 7fc8 Level-0 table #253: 53285 bytes OK
-2023/04/26-09:31:12.981 7fc8 Recovering log #252
-2023/04/26-09:31:12.982 7fc8 Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/000252.log 
-2023/04/26-09:31:12.983 7fc8 Delete type=0 #250
-2023/04/26-09:31:12.983 6298 Compacting 4@0 + 1@1 files
-2023/04/26-09:31:12.989 6298 Generated table #254@0: 4257 keys, 277276 bytes
-2023/04/26-09:31:12.989 6298 Compacted 4@0 + 1@1 files => 277276 bytes
-2023/04/26-09:31:12.990 6298 compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/04/26-09:31:12.990 6298 Delete type=2 #245
-2023/04/26-09:31:12.990 6298 Delete type=2 #247
-2023/04/26-09:31:12.990 6298 Delete type=2 #249
-2023/04/26-09:31:12.990 6298 Delete type=2 #251
-2023/04/26-09:31:12.990 6298 Delete type=2 #253
-2023/04/26-09:31:17.411 687c Level-0 table #256: started
-2023/04/26-09:31:17.414 687c Level-0 table #256: 48893 bytes OK
->>>>>>> 0958579521401b401686b578f24f41c2a7b67fd6
-=======
-2023/04/26-10:55:56.696 30f4 Reusing MANIFEST C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
-2023/04/26-10:55:56.697 30f4 Recovering log #321
-2023/04/26-10:55:56.698 30f4 Level-0 table #324: started
-2023/04/26-10:55:56.712 30f4 Level-0 table #324: 80962 bytes OK
-2023/04/26-10:55:56.712 30f4 Recovering log #323
-2023/04/26-10:55:56.713 30f4 Reusing old log C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/000323.log 
-2023/04/26-10:55:56.715 30f4 Delete type=0 #321
-2023/04/26-10:56:02.893 4780 Level-0 table #326: started
-2023/04/26-10:56:02.911 4780 Level-0 table #326: 49055 bytes OK
-2023/04/26-10:56:02.914 4780 Delete type=0 #323
-2023/04/26-10:56:02.915 4780 Compacting 4@0 + 1@1 files
-2023/04/26-10:56:02.959 4780 Generated table #327@0: 4750 keys, 316553 bytes
-2023/04/26-10:56:02.960 4780 Compacted 4@0 + 1@1 files => 316553 bytes
-2023/04/26-10:56:02.960 4780 compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/04/26-10:56:02.962 4780 Delete type=2 #317
-2023/04/26-10:56:02.962 4780 Delete type=2 #319
-2023/04/26-10:56:02.962 4780 Delete type=2 #322
-2023/04/26-10:56:02.962 4780 Delete type=2 #324
-2023/04/26-10:56:02.962 4780 Delete type=2 #326
->>>>>>> Stashed changes
+2023/04/26-11:49:05.564 49c8 Reusing MANIFEST C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
+2023/04/26-11:49:05.565 49c8 Recovering log #404
+2023/04/26-11:49:05.565 49c8 Reusing old log C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/000404.log 
+2023/04/26-11:49:11.711 244c Level-0 table #408: started
+2023/04/26-11:49:11.729 244c Level-0 table #408: 34309 bytes OK
+2023/04/26-11:49:11.732 244c Delete type=0 #404

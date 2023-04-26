@@ -1,29 +1,10 @@
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-2023/04/26-09:22:32.991 499c Reusing MANIFEST C:\Users\citta\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
-2023/04/26-09:22:32.991 499c Recovering log #15
-2023/04/26-09:22:32.992 499c Reusing old log C:\Users\citta\CS321-Browser-Extension\tmp\Default\Session Storage/000015.log 
-2023/04/26-09:22:39.091 5338 Level-0 table #19: started
-2023/04/26-09:22:39.096 5338 Level-0 table #19: 48111 bytes OK
-2023/04/26-09:22:39.101 5338 Delete type=0 #15
-=======
-2023/04/26-09:30:49.295 1438 Reusing MANIFEST C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
-2023/04/26-09:30:49.296 1438 Recovering log #248
-2023/04/26-09:30:49.296 1438 Level-0 table #251: started
-2023/04/26-09:30:49.303 1438 Level-0 table #251: 48932 bytes OK
-2023/04/26-09:30:49.303 1438 Recovering log #250
-2023/04/26-09:30:49.303 1438 Reusing old log C:\Users\codyq\OneDrive\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/000250.log 
-2023/04/26-09:30:49.304 1438 Delete type=0 #248
-2023/04/26-09:30:53.822 7410 Level-0 table #253: started
-2023/04/26-09:30:53.829 7410 Level-0 table #253: 53285 bytes OK
->>>>>>> 0958579521401b401686b578f24f41c2a7b67fd6
-=======
-2023/04/26-10:55:32.140 3a88 Reusing MANIFEST C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
-2023/04/26-10:55:32.141 3a88 Recovering log #318
-2023/04/26-10:55:32.141 3a88 Reusing old log C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/000318.log 
-2023/04/26-10:55:38.489 430c Level-0 table #322: started
-2023/04/26-10:55:38.495 430c Level-0 table #322: 66388 bytes OK
-2023/04/26-10:55:38.496 430c Delete type=0 #318
-2023/04/26-10:55:40.639 36a4 Level-0 table #324: started
-2023/04/26-10:55:40.656 36a4 Level-0 table #324: 80962 bytes OK
->>>>>>> Stashed changes
+2023/04/26-11:48:28.353 2d28 Reusing MANIFEST C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
+2023/04/26-11:48:28.355 2d28 Recovering log #399
+2023/04/26-11:48:28.357 2d28 Level-0 table #403: started
+2023/04/26-11:48:28.373 2d28 Level-0 table #403: 48082 bytes OK
+2023/04/26-11:48:28.374 2d28 Recovering log #402
+2023/04/26-11:48:28.374 2d28 Reusing old log C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/000402.log 
+2023/04/26-11:48:28.377 2d28 Delete type=0 #399
+2023/04/26-11:48:34.666 1bf8 Level-0 table #405: started
+2023/04/26-11:48:34.682 1bf8 Level-0 table #405: 49869 bytes OK
+2023/04/26-11:48:34.684 1bf8 Delete type=0 #402

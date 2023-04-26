@@ -20,13 +20,14 @@ var commentCount = 0;
  */
 function organizeComments(arr)
 {
+    commentCount = 0;
     console.log("Organizing comments\n");
     //console.log(arr);
     const newArr = [];
     let max = arr.length;
     let i = 0;
     let added = 0, found = 0;
-    while (i < max && commentCount < 2)
+    while (i < max && commentCount < 3)
     {
         let foundComment = false;
         const newArr2 = [];
@@ -153,8 +154,14 @@ function findProfAndRating(name, URL)
                 {
                     //console.log("FOUND PROF PAGE");
                     await page.goto(hrefs[i]); //Goes to page
-                    await page.click('button.Buttons__Button-sc-19xdot-1.PaginationButton__StyledPaginationButton-txi1dr-1.gjQZal');
-                    console.log("EXPANDED");
+                    try{
+                        console.log("EXPANDED");
+                        await page.click('button.Buttons__Button-sc-19xdot-1.PaginationButton__StyledPaginationButton-txi1dr-1.gjQZal');
+                    }
+                    catch(error)
+                    {
+                        console.log("Not expanded");
+                    }
                     await new Promise(resolve => setTimeout(resolve, 2000));
                     const comments = await page.evaluate(() => document.body.innerText);
                     //console.log(comments);
@@ -209,12 +216,17 @@ function askUser()
     })
 }
 
-function startFindingProfessor(name)
+function resetProfessorInfo()
 {
     while(profInfoArr.length != 0)
     {
         profInfoArr.pop();
     }
+}
+
+function startFindingProfessor(name)
+{
+    resetProfessorInfo();
     let URL = "https://www.ratemyprofessors.com/search/teachers?query=";
     let temp = name.split(' ');
     URL += temp[0] + "%20" + temp[1];
@@ -229,7 +241,8 @@ function startFindingProfessor(name)
 module.exports = {
     startFindingProfessor: startFindingProfessor,
     profInfoArr: profInfoArr,
-    commentCount: commentCount};
+    commentCount: commentCount,
+    resetProfessorInfo: resetProfessorInfo};
 
 //app.use.express.static('../../interface');
 

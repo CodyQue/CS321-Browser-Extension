@@ -61,12 +61,9 @@ app.post('/users', (req, res) => {
   }
   else if (req.body.parcel.includes("findProfessor"))
   {
+    parcel2 = "";
     let arr = req.body.parcel.split('/');
     console.log("Finding professor: " + arr[0] + ", Arr: " + findProf.profInfoArr);
-    while (findProf.profInfoArr.length != 0)
-    {
-      findProf.profInfoArr.pop();
-    }
     findProf.startFindingProfessor(arr[0]);
     (async () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
@@ -75,7 +72,7 @@ app.post('/users', (req, res) => {
         console.log("NEW Waiting for professor rating");
         await new Promise(resolve => setTimeout(resolve, 10000));
       }
-      await new Promise(resolve => setTimeout(resolve, 9500));
+      await new Promise(resolve => setTimeout(resolve, 11100));
       for(let i = 0; i < findProf.profInfoArr.length; ++i)
       {
         console.log("GOING THROUGH LOOP");
@@ -94,15 +91,21 @@ app.post('/users', (req, res) => {
   res.send(parcel);
 });
 
-app.get('/test3', (req, res) => {
+app.get('/test3', (req, res) => { //For importing schedule to front-end
   res.status(200).send('<h1>'+ parcel3 + '</h1>');
 });
 
-app.get('/test2', (req, res) => {
+app.get('/test2', (req, res) => { //For finding professor info
   res.status(200).send('<h1>'+ parcel2 + '</h1>');
+  findProf.resetProfessorInfo;
+  while(findProf.profInfoArr.length!=0)
+  {
+    findProf.profInfoArr.pop();
+  }
+  console.log("Reset done: " + findProf.profInfoArr);
 });
 
-app.get('/test', (req, res) => {
+app.get('/test', (req, res) => { //For course generating
   console.log(count);
   ++count;
   res.status(200).send('<h1>'+ parcel + '</h1>');

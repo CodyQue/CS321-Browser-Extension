@@ -16,5 +16,6 @@ fetch('http://localhost:8000/test2')
     const comment3 = document.getElementById("comment3");
     comment1.innerHTML = arr[2];
     comment2.innerHTML = arr[3];
+    comment3.innerHTML = arr[4];
   })
   .catch(error => console.error(error));
