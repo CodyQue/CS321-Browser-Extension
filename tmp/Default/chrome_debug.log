@@ -1,11 +1,13 @@
-[0425/215111.337:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+[0425/220506.840:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
 ERROR: Couldn't read tbsCertificate as SEQUENCE
 ERROR: Failed parsing Certificate
 
-[0425/215111.610:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0425/215111.837:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0425/215111.931:INFO:CONSOLE(1)] "1682473871930 : [OpenWrap] : [Error] GPT-Slot not found for divId: ad_rec_01", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0425/215111.933:INFO:CONSOLE(1)] "[GPT] Div ID passed to googletag.display() does not match any defined slots: ad_rec_01.", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0425/215111.965:WARNING:spdy_session.cc(3484)] Received HEADERS for invalid stream 3
-[0425/215112.242:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0425/215112.349:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0425/220507.155:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0425/220507.373:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0425/220507.453:INFO:CONSOLE(1)] "1682474707452 : [OpenWrap] : [Error] GPT-Slot not found for divId: ad_rec_01", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0425/220507.454:INFO:CONSOLE(1)] "[GPT] Div ID passed to googletag.display() does not match any defined slots: ad_rec_01.", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0425/220507.527:WARNING:spdy_session.cc(3484)] Received HEADERS for invalid stream 1
+[0425/220507.788:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0425/220507.884:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0425/220508.130:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/111.0.5555.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0425/220508.257:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)

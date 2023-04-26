@@ -40,9 +40,11 @@ let count = 0;
 let lock = 1;
 
 app.post('/users', (req, res) => {
-  if (req.body.parcel.includes("generateSchedule"))
+  parcel = req.body.parcel;
+  console.log(parcel);
+  if (parcel.includes("generateSchedule"))
   {
-    let arr = req.body.parcel.split('/');
+    let arr = parcel.split('/');
     arr.pop();
     //console.log("Generating schedule");
     courseRandomizer.generateSetup(arr);
@@ -59,9 +61,9 @@ app.post('/users', (req, res) => {
     })();
     //console.log("DOne");
   }
-  else if (req.body.parcel.includes("findProfessor"))
+  else if (parcel.includes("findProfessor"))
   {
-    let arr = req.body.parcel.split('/');
+    let arr = parcel.split('/');
     console.log("Finding professor: " + arr[0]);
     findProf.startFindingProfessor(arr[0]);
     (async () => {
@@ -74,9 +76,9 @@ app.post('/users', (req, res) => {
       console.log("DONE")
     })();
   }
-  else if (req.body.parcel.includes("importSchedule"))
+  else if (parcel.includes("importSchedule"))
   {
-    parcel3 = req.body.parcel.substring(0, parcel.length-13);
+    parcel3 = parcel.substring(0, parcel.length-13);
     console.log(parcel3);
   }
   console.log(`Received parcel: ${parcel}`);
