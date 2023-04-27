@@ -14,8 +14,14 @@ fetch('http://localhost:8000/test2')
     const comment1 = document.getElementById("comment1");
     const comment2 = document.getElementById("comment2");
     const comment3 = document.getElementById("comment3");
+    const courses = document.getElementById("coursesProf");
     comment1.innerHTML = arr[2];
     comment2.innerHTML = arr[3];
     comment3.innerHTML = arr[4];
+    courses.innerHTML = "Courses They Teach: ";
+    for(let i = 5; i < arr.length;++i)
+    {
+      courses.innerHTML += arr[i] + " ";
+    }
   })
   .catch(error => console.error(error));

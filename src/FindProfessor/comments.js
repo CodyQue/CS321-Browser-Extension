@@ -27,7 +27,7 @@ function organizeComments(arr)
     let max = arr.length;
     let i = 0;
     let added = 0, found = 0;
-    while (i < max && commentCount < 3)
+    while (i < max)
     {
         let foundComment = false;
         const newArr2 = [];
@@ -59,8 +59,11 @@ function organizeComments(arr)
                 newArr2.push(arr[i + 4]); //adds the course
                 newArr2.push(arr[i + 7]); //adds the data
                 newArr.push(newArr2); //adds it to main array
-                profInfoArr.push(newArr2);
-                ++commentCount;
+                if (commentCount < 3)
+                {
+                    profInfoArr.push(newArr2);
+                    ++commentCount;
+                }
             }
         }
         foundComment = false;
@@ -88,6 +91,7 @@ function putInMap(arr)
         newArr.push(arr[i][3]); //Adds the date
         if (newMap.has(arr[i][2]) == false) //Adds a new course to the map
         {
+            profInfoArr.push(arr[i][2]);
             const newArr2 = [];
             newArr2.push(newArr);
             newMap.set(arr[i][2], newArr2);
@@ -99,7 +103,7 @@ function putInMap(arr)
             newMap.set(arr[i][2], newArr2); //Puts it back in the map
         }
     }
-    console.log(newMap);
+    //console.log(newMap);
 }
 
 /**
@@ -168,7 +172,7 @@ function findProfAndRating(name, URL)
                     var arr = comments.split("\n");
                     profInfoArr.push(overallRating);
                     arr = organizeComments(arr);
-                    //putInMap(arr);
+                    putInMap(arr);
                    
                     console.log(profInfoArr);
                     console.log("Comment count: " + commentCount);

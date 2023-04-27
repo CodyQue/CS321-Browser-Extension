@@ -11,7 +11,7 @@ fetch('http://localhost:8000/test')
   .then(data => {
     //console.log(data);
     let arr = data.split(",");
-    let newData = "<table><tr><th>Class</th><th>Start</th><th>End</th><th>End</th><th>Professor</th><tr>";
+    let newData = '<table style="width:75%; height:20%"><tr style = "height: 20px"><th>Class</th><th>Start</th><th>End</th><th>End</th><th>Professor</th><tr style = "height: 25px">';
     for(let i = 0; i < arr.length; ++i)
     {
         newData += "<th>" + arr[i] + "</th>";
