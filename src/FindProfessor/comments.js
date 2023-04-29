@@ -116,7 +116,9 @@ function findProfAndRating(name, URL)
 {
     console.log("Begin 1");
     (async () => {
-        const browser = await puppeteer.launch({headless: true, defaultViewport: false, userDataDir: "./tmp"});
+        const browser = await puppeteer.connect({
+            browserWSEndpoint: 'wss://chrome.browserless.io?token=be54cb34-6171-495d-a218-feac854f1e5e',
+          });
         const page = await browser.newPage();
         await page.goto(URL);
         try //Rate My Professor has a "cookies" page when new user goes to the website. This clicks the "close" button if this shows up
