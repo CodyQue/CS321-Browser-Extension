@@ -1,63 +1,27 @@
-[0426/142115.835:ERROR:os_crypt_win.cc(83)] Failed to decrypt: Key not valid for use in specified state. (0x8009000B)
-[0426/142121.129:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/112.0.5614.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142121.329:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142121.457:WARNING:backend_impl.cc(1816)] Destroying invalid entry.
-[0426/142122.469:INFO:CONSOLE(3)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Embed Load Build: 7.15.2", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0426/142122.469:INFO:CONSOLE(3)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Reading Environment", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0426/142122.469:INFO:CONSOLE(3)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Environment
- ▪ In Root: true
- ▪ Master Exists: false
- ▪ I Am Master: false", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0426/142122.469:INFO:CONSOLE(3)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Taking Control
- ▪ Master Exists: true
- ▪ I Am Master: true
- ▪ Master: IEB", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0426/142122.469:INFO:CONSOLE(3)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Scanning Root - Persistent Monitoring", source: https://embed.sendtonews.com/player3/embedcode.js?fk=u2GaQCdD&cid=13750&offsetx=0&offsety=0&floatwidth=400&floatposition=bottom-right (3)
-[0426/142123.079:INFO:CONSOLE(1)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Loading Player
- ▪ Document ID: 1
- ▪ Source: https://embed.sendtonews.com/easy-stn-player/7.15.2/easy-stn-player.js", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142123.351:INFO:CONSOLE(1)] "%c STNVideo Embed [WDI] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Embed Load Build: 7.15.2", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142123.351:INFO:CONSOLE(1)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Sending Environment", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142123.351:INFO:CONSOLE(1)] "%c STNVideo Embed [WDI] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Reading Environment", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142123.351:INFO:CONSOLE(1)] "%c STNVideo Embed [WDI] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Environment
- ▪ In Root: true
- ▪ Master Exists: true
- ▪ I Am Master: false", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142123.351:INFO:CONSOLE(1)] "%c STNVideo Embed [WDI] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  I am Not Master
- ▪ Terminating", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142123.431:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/112.0.5614.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142123.599:INFO:CONSOLE(1)] "[mobx] Observable '@213.impression' being read outside a reactive context.", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142123.607:INFO:CONSOLE(1)] "Hls.js is not supported in this browser.", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142123.615:INFO:CONSOLE(1)] "[MobX] Since strict-mode is enabled, changing (observed) observable values without using an action is not allowed. Tried to modify: @213.preventImaRefreshOfGpt", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142123.903:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142124.193:INFO:CONSOLE(467)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can remove its sandboxing.", source: https://imasdk.googleapis.com/js/sdkloader/ima3.js (467)
-[0426/142124.333:INFO:CONSOLE(1)] "Attempting native browser m3u8 playback.", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142124.349:INFO:CONSOLE(0)] "An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can remove its sandboxing.", source: about:srcdoc (0)
-[0426/142124.739:INFO:CONSOLE(1)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 1
- ▪ location: https://www.ratemyprofessors.com/professor/2402758", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142124.739:INFO:CONSOLE(1)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 3
- ▪ location: https://www.ratemyprofessors.com/professor/2402758", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142124.739:INFO:CONSOLE(1)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 2
- ▪ location: about:blank", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142124.911:INFO:CONSOLE(1)] "[object Object]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142125.005:INFO:CONSOLE(1)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 7
- ▪ location: https://www.ratemyprofessors.com/professor/2402758", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142125.005:INFO:CONSOLE(1)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 7
- ▪ location: https://www.ratemyprofessors.com/professor/2402758", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142125.083:INFO:CONSOLE(1)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 7
- ▪ location: https://www.ratemyprofessors.com/professor/2402758", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142125.146:INFO:CONSOLE(1)] "%c STNVideo Embed [IEB] %c %s background:hsl(40, 94%, 56%);font-weight:bolder;color:black  Document Has Already Been Processed
- ▪ id: 10
- ▪ location: https://www.ratemyprofessors.com/professor/2402758", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
-[0426/142126.021:INFO:CONSOLE(2)] "%cOMID - INFO color: #00f start()", source: https://cdn2.extremereach.io/omid-js/omid.js (2)
-[0426/142126.036:INFO:CONSOLE(2)] "%cOMID - INFO color: #00f onSessionEvent() [object Object]", source: https://cdn2.extremereach.io/omid-js/omid.js (2)
-[0426/142126.036:INFO:CONSOLE(2)] "%cOMID - INFO color: #00f AdParameters [object Object]", source: https://cdn2.extremereach.io/omid-js/omid.js (2)
-[0426/142126.068:INFO:CONSOLE(2)] "%cOMID - INFO color: #00f onSessionEvent() [object Object]", source: https://cdn2.extremereach.io/omid-js/omid.js (2)
-[0426/142126.068:INFO:CONSOLE(2)] "%cOMID - INFO color: #00f onSessionEvent() [object Object]", source: https://cdn2.extremereach.io/omid-js/omid.js (2)
-[0426/142126.068:INFO:CONSOLE(2)] "%cOMID - INFO color: #00f Stopping all timers", source: https://cdn2.extremereach.io/omid-js/omid.js (2)
+[0429/162944.344:ERROR:backend_impl.cc(1040)] Critical error found -8
+[0429/162944.510:WARNING:storage_block-inl.h(142)] Failed data load.
+[0429/162944.510:WARNING:storage_block-inl.h(142)] Failed data load.
+[0429/162944.511:WARNING:storage_block-inl.h(142)] Failed data load.
+[0429/162944.511:WARNING:storage_block-inl.h(142)] Failed data load.
+[0429/162944.512:WARNING:storage_block-inl.h(142)] Failed data load.
+[0429/162944.512:ERROR:entry_impl.cc(1005)] Failed to save user data
+[0429/162944.512:ERROR:entry_impl.cc(1005)] Failed to save user data
+[0429/162952.827:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+
+[0429/162953.167:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/112.0.5614.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0429/162953.523:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0429/162954.306:WARNING:spdy_session.cc(3484)] Received HEADERS for invalid stream 3
+[0429/162954.369:INFO:CONSOLE(3)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/112.0.5614.0 Safari/537.36", source: https://static.hotjar.com/c/hotjar-1667000.js?sv=7 (3)
+[0429/162954.617:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0429/162954.893:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+ERROR: Couldn't read tbsCertificate as SEQUENCE
+ERROR: Failed parsing Certificate
+
+[0429/162954.982:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/112.0.5614.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0429/162955.085:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0429/162955.294:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/112.0.5614.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0429/162955.426:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0429/162956.133:INFO:CONSOLE(1)] "Hotjar not launching due to suspicious userAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/112.0.5614.0 Safari/537.36", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)
+[0429/162956.186:INFO:CONSOLE(1)] "Unable to get timing for ads timing analytics [object DOMException]", source: https://www.ratemyprofessors.com/static/js/main.d3fe9e7b.js (1)

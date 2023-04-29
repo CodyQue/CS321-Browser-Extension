@@ -1,22 +1,6 @@
-2023/04/26-13:55:58.909 eb0 Reusing MANIFEST C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
-2023/04/26-13:55:58.912 eb0 Recovering log #476
-2023/04/26-13:55:58.916 eb0 Level-0 table #479: started
-2023/04/26-13:55:58.931 eb0 Level-0 table #479: 79208 bytes OK
-2023/04/26-13:55:58.932 eb0 Recovering log #478
-2023/04/26-13:55:58.933 eb0 Reusing old log C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/000478.log 
-2023/04/26-13:55:58.936 eb0 Delete type=0 #476
-2023/04/26-13:56:23.421 1b44 Level-0 table #481: started
-2023/04/26-13:56:23.425 1b44 Level-0 table #481: 27216 bytes OK
-2023/04/26-13:56:23.426 1b44 Delete type=0 #478
-2023/04/26-13:56:39.455 1b44 Level-0 table #483: started
-2023/04/26-13:56:39.467 1b44 Level-0 table #483: 26813 bytes OK
-2023/04/26-13:56:39.468 1b44 Delete type=0 #480
-2023/04/26-13:56:39.469 1b44 Compacting 4@0 + 1@1 files
-2023/04/26-13:56:39.477 1b44 Generated table #484@0: 66 keys, 92884 bytes
-2023/04/26-13:56:39.477 1b44 Compacted 4@0 + 1@1 files => 92884 bytes
-2023/04/26-13:56:39.477 1b44 compacted to: files[ 0 1 0 0 0 0 0 ]
-2023/04/26-13:56:39.478 1b44 Delete type=2 #475
-2023/04/26-13:56:39.478 1b44 Delete type=2 #477
-2023/04/26-13:56:39.478 1b44 Delete type=2 #479
-2023/04/26-13:56:39.478 1b44 Delete type=2 #481
-2023/04/26-13:56:39.478 1b44 Delete type=2 #483
+2023/04/26-14:21:19.877 25dc Reusing MANIFEST C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/MANIFEST-000001
+2023/04/26-14:21:19.878 25dc Recovering log #482
+2023/04/26-14:21:19.880 25dc Reusing old log C:\Users\codyq\Documents\GitHub\CS321-Browser-Extension\tmp\Default\Session Storage/000482.log 
+2023/04/26-14:21:25.915 3688 Level-0 table #487: started
+2023/04/26-14:21:25.919 3688 Level-0 table #487: 66293 bytes OK
+2023/04/26-14:21:25.921 3688 Delete type=0 #482

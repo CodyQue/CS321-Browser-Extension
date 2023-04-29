@@ -91,7 +91,7 @@ async function scrapeSchedules(arr)
 {
     console.log("Begin");
     (async () => {
-        const browser = await puppeteer.launch({headless: true, defaultViewport: false, userDataDir: "./tmp"});
+        const browser = await puppeteer.launch({headless: false, defaultViewport: false, userDataDir: "./tmp"});
         const page = await browser.newPage();
         let allSections = [];
         for(let i = 0; i < arr.length; ++i) //Goes through every course the user wants to take
