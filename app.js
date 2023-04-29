@@ -72,7 +72,7 @@ app.post('/users', (req, res) => {
         console.log("NEW Waiting for professor rating");
         await new Promise(resolve => setTimeout(resolve, 10000));
       }
-      await new Promise(resolve => setTimeout(resolve, 11100));
+      await new Promise(resolve => setTimeout(resolve, 28500));
       for(let i = 0; i < findProf.profInfoArr.length; ++i)
       {
         console.log("GOING THROUGH LOOP");
