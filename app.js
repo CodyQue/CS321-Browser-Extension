@@ -44,7 +44,7 @@ app.post('/users', (req, res) => {
   {
     let arr = req.body.parcel.split('/');
     arr.pop();
-    //console.log("Generating schedule");
+    console.log("Generating schedule");
     courseRandomizer.generateSetup(arr);
     (async () => {
       while(courseRandomizer.schedule.length == 0)
