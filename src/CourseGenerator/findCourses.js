@@ -104,7 +104,7 @@ async function scrapeSchedules(arr)
             allSections = [];
             console.log("COurses: " + course + ", Days: " + days);
             await page.goto('https://patriotweb.gmu.edu/pls/prod/bwckschd.p_disp_dyn_sched');
-            await page.select('select[name="p_term"]', '202370');
+            await page.select('select[name="p_term"]', '202470');
             await page.click('input[type="submit"]');
             await new Promise(resolve => setTimeout(resolve, 2500));
             await page.waitForSelector('#subj_id');

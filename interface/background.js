@@ -23,12 +23,32 @@ const date3 = document.getElementById("W");
 const date4 = document.getElementById("R");
 const date5 = document.getElementById("F");
 const date6 = document.getElementById("S");
+const slow = document.getElementById("slow");
+const medium = document.getElementById("medium");
+const fast = document.getElementById("fast");
 //console.log("Date1: " + date1);
 const postButton = document.getElementById("post");
 
         postButton.addEventListener('click', postInfo);
         async function postInfo(e) 
         {
+            if (slow.checked) {
+                console.log("Checked slow")
+                time = 480000
+            }
+            else if (medium.checked) {
+                console.log("Checked medium")
+                time = 360000
+            }
+            else if (fast.checked){
+                console.log("Checked fast")
+                time = 180000
+            }
+            else {
+                console.log("Checked slow")
+                time = 480000
+            }
+            console.log("GOing through function")
             if (date1.checked) //Checks days
             {
                 days += date1.value;
@@ -57,7 +77,6 @@ const postButton = document.getElementById("post");
             {
                 courses += input1.value;
                 ++courseCount;
-                time+=28000;
             }
             if (!(input2.value ==''))
             {
@@ -67,7 +86,6 @@ const postButton = document.getElementById("post");
                 }
                 courses += input2.value;
                 ++courseCount;
-                time+=28000;
             }
             if (!(input3.value ==''))
             {
@@ -77,7 +95,6 @@ const postButton = document.getElementById("post");
                 }
                 courses += input3.value;
                 ++courseCount;
-                time+=28000;
             }
             if (!(input4.value ==''))
             {
@@ -87,7 +104,6 @@ const postButton = document.getElementById("post");
                 }
                 courses += input4.value;
                 ++courseCount;
-                time+=28000;
             }
             if (!(input5.value ==''))
             {
@@ -97,7 +113,6 @@ const postButton = document.getElementById("post");
                 }
                 courses += input5.value;
                 ++courseCount;
-                time+=28000;
             }
             lock = 0;
             while (lock == 1)
@@ -123,6 +138,7 @@ const postButton = document.getElementById("post");
                         "/" + "generateSchedule")
                 })
             });
+            console.log("Time: " + time);
             await new Promise(resolve => setTimeout(resolve, time));
             window.location.href = "./result.html";
         }

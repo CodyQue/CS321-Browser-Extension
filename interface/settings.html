@@ -1,0 +1,40 @@
+<!doctype html>
+<html class = "h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="../public/styles.css" rel="stylesheet">
+</head>
+<body class ="text-gray-700 w-full h-full bg-no-repeat bg-cover" style="background-image: url(./file2.png)">
+  <div class = "bg-contain flex justify-between py-5 px-1 h-full" id = "menu" style="width: 500px; height: 300px;"> <!-- Different sections of the browser extension-->
+  <div class = "width: 0.5rem" style = "position:relative; right:2px; top:-7px">
+      <a href = "settings.html">Settings</a>
+  </div>
+  <div class = "width: 0.5rem" style = "position:relative; left:4px; top:-7px" >
+    <a href = "about.html">About</a>
+  </div>
+  <div class = "width: 0.5rem" style = "position:relative; left:16px; top:-7px">
+      <a href="menu.html">
+          <span>Schedule</span>
+      </a>
+  </div> 
+  <div class = "width: 0.5rem" style = "position:relative; right:30px; top:-7px">
+      <a href="findProfessor.html">
+          <span>New Schedule</span>
+      </a>
+  </div>
+  </div>
+  <div id = "settings" style = "position:relative;top:-55%; right:-20%;">
+    <h1 style = "font-size: 30px;"><b>Settings</b></h1>
+    <form style = "font-size: 15px;">
+        <input type="checkbox" id="checkbox1" name="checkboxGroup" value="value1">
+        <label for="checkbox1">Slow</label><br>
+        <input type="checkbox" id="checkbox2" name="checkboxGroup" value="value2">
+        <label for="checkbox2">Medium</label><br>
+        <input type="checkbox" id="checkbox3" name="checkboxGroup" value="value3">
+        <label for="checkbox3">Fast</label><br>
+    </form>
+    </div>
+</body>
+</html>

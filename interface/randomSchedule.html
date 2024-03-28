@@ -8,9 +8,6 @@
 </head>
 <body class ="text-gray-700 w-full h-full bg-no-repeat bg-cover" style="background-image: url(./file2.png)">
     <div class = "bg-contain flex justify-between py-5 px-1 h-full" id = "menu" style="width: 500px; height: 300px;"> <!-- Different sections of the browser extension-->
-        <div class = "width: 0.5rem" style = "position:relative; right:2px; top:-7px">
-            <a href = "#">Settings</a>
-        </div>
         <div class = "width: 0.5rem" style = "position:relative; left:4px; top:-7px" >
           <a href = "about.html">About</a>
         </div>
@@ -32,7 +29,7 @@
     <h1 style = "position:relative; top:30px">3:   <input type="text" id="input3" size="40"/></h1>
     <h1 style = "position:relative; top:40px">4:   <input type="text" id="input4" size="40"/></h1>
     <h1 style = "position:relative; top:50px">5:   <input type="text" id="input5" size="40"/></h1>
-    <button id="post" style = "position:relative; top:100px">ENTER</button>
+    <button id="post" style = "position:relative; top:120px">ENTER</button>
     <script src = "changeToLoading.js"></script>
     <div id = "Days Of The Week">
         <input type="checkbox" id="M" name="Monday" value="M" style = "position:relative; top:40px" checked>
@@ -48,12 +45,15 @@
         <input type="checkbox" id="S" name="Saturday" value="S"style = "position:relative; top:40px">
         <label for="Sat" style = "position:relative; top:40px">S</label>
     </div>
-    <script src = 'background.js'></script>
-    <div id = "searchProfessor" class= "center" style = "position:relative; left:150px; top:45px">
-        <h1>Looking For A Professor?</h1>
-        <input type="input" id="professor"/>
-        <button id="post2">FIND</button>
+    <div id = "Speed">
+        <input type="checkbox" id="slow" name="slow" value="slow" style = "position:relative; top:40px">
+        <label for="slow" style = "position:relative; top:40px">Slow Speed</label>
+        <input type="checkbox" id="medium" name="medium" value="medium" style = "position:relative; top:40px">
+        <label for="medium" style = "position:relative; top:40px">Medium Speed</label>
+        <input type="checkbox" id="high" name="high" value="high" style = "position:relative; top:40px">
+        <label for="high" style = "position:relative; top:40px">High Speed</label>
     </div>
+    <script src = 'background.js'></script>
     <script src = "background2.js"></script>
     <script src = "changesToLoading2.js"></script>
   </div>

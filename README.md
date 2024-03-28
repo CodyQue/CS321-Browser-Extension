@@ -1,6 +1,6 @@
 # CS 321: Browser Extension
 
-#### By Cody, Aadya, Anthony
+#### By Cody Querubin, Aadya Kamath, Anthony Bazar
 
 A browser extension to generate a schedule, with the best rated professors, for George Mason University students.
 
