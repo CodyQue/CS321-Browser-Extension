@@ -28,4 +28,7 @@ The first thing to do is load the browser extension onto the browser. To do this
 The second thing is to run the back-end code on your local machine. To do this, run this command:
 #### `node .\app.js`
 
+### UI of the Extension
 ![alt text](cs321be1.png)
+
+![alt text](cs321be2.png)
