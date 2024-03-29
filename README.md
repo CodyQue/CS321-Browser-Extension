@@ -1,8 +1,8 @@
-# CS 321: Browser Extension
+# CS 321: GMU Course Generator Browser Extension
 
 #### By Cody Querubin, Aadya Kamath, Anthony Bazar
 
-A browser extension to generate a schedule, with the best rated professors, for George Mason University students.
+Are you struggling with planning what courses to take for next semester? Did the course that you wanted to take get filled up and now you need to find another class? Well, have no fear, the GMU Course Generator Browser Extension is here! This browser extension is used to help GMU students generate a schedule, with the best-rated professors. With inputting the course the user wants to take, as well as the help of a few button clicking, the extension will generate a schedule for them in minutes!
 
 ### Structure
 There are two components of this project, the front-end and the back-end. The front-end code is found in the interface directory, while the back-end code is everything around it.
